@@ -1,0 +1,32 @@
+.flexWho{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.who{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+     border-radius: 0px; /*5px rounded corners */
+    background-color: #ffffff;
+    text-align: center;
+    float: left;
+    width: 30%;
+    /* padding: 5px 5px; */
+    margin:1%;
+    
+  }
+
+.who:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+  
+  @media only screen and (max-width: 600px) {
+    .who{
+      width: 100%;
+      height: max-content !important;
+    padding: 2px 2px;
+    }
+  }

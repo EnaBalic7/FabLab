@@ -1,0 +1,3215 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* hrefs lander */
+
+a {
+    text-decoration: none;
+}
+
+.links {
+    cursor: pointer;
+    color: rgb(123, 123, 250);
+    font-style: italic;
+}
+
+.linksDark {
+    color: rgb(57, 57, 253);
+}
+
+/* footerIcn */
+.iconBg {
+    color: #999999;
+}
+
+.iFrameStyle {
+    display: flex;
+    justify-content: center;
+}
+
+/* navbarAbout Start */
+/* The navigation menu */
+
+.navbarAbout {
+    overflow: hidden;
+    background-color: #988DAD;
+    display: flex;
+}
+
+/* Navigation links */
+
+.navbarAbout a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14.5px 15px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+
+.navbarAbout a:hover {
+    background-color: #7C6F97;
+}
+
+/* navbarAbout End */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navPosition {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navLogo {
+    float: left;
+    height: 52px;
+}
+
+#hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(247, 247, 247);
+    margin-top: 5px;
+    margin-top: 15%;
+    margin-right: 10px;
+}
+
+.nav-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-content a {
+    font-family: "Poppins", sans-serif
+}
+
+#hamburger {
+    display: none;
+}
+
+.lightPurple {
+    color: #988DAD;
+}
+
+.lightGray {
+    color: #666666;
+}
+
+.lightGraySize {
+    color: #666666;
+    font-size: 13px;
+}
+
+/*Start courseDetails css */
+
+.bg {
+    height: 20%;
+    background-color: #95b0d3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* The navigation menu */
+
+.navbarCD {
+    overflow: hidden;
+    background-color: #333333;
+    display: flex;
+}
+
+/* Navigation links */
+
+.navbarCD a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+
+.navbarCD a:hover {
+    background-color: #89BBDE;
+}
+
+/* form design */
+
+.subBtn {
+    background-color: #58be5c;
+    border-radius: 10px;
+    border: transparent;
+    color: white;
+    padding: 2px 10px;
+}
+
+.subBtn:hover {
+    background-color: #40a543;
+    box-shadow: 0 12px 16px 0 rgba(39, 39, 39, 0.19), 0 17px 50px 0 rgba(39, 39, 39, 0.19);
+    transition: 0.5s ease-in-out;
+}
+
+.clfBtn {
+    background-color: rgb(248, 58, 58);
+    border-radius: 10px;
+    border: transparent;
+    color: white;
+    padding: 2px 10px;
+}
+
+.clfBtn:hover {
+    background-color: red;
+    box-shadow: 0 12px 16px 0 rgba(39, 39, 39, 0.19), 0 17px 50px 0 rgba(39, 39, 39, 0.19);
+    transition: 0.5s ease-in-out;
+}
+
+.flexCD {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    background-color: white;
+    margin: auto;
+    margin-top: -2.5%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.flexCD div {
+    text-align: center;
+}
+
+.btnPrijava {
+    margin-top: 32%;
+}
+
+.spanSt {
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+.mainR {
+    background-image: url("/slike/ipforBegin.png");
+    background-repeat: no-repeat;
+    flex: 1;
+    background-size: contain;
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+}
+
+.mainR3d {
+    background-image: url("/slike/3dEdu.png");
+    background-repeat: no-repeat;
+    flex: 1;
+    background-size: contain;
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+}
+
+.mainRD {
+    background-image: url("/slike/IPDemyst.png");
+    background-repeat: no-repeat;
+    flex: 1;
+    background-size: contain;
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+}
+
+.mainRB {
+    background-image: url("/slike/IPforBlz.png");
+    background-repeat: no-repeat;
+    flex: 1;
+    background-size: contain;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+}
+
+.mainL {
+    flex: 2;
+    padding: 30px;
+}
+
+/*End courseDetails css */
+/* ************** */
+/* start declaration css */
+
+.bigNumber {
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.bigNumberSmaller {
+    font-size: 26px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+
+.goalsWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.goals {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.goal {
+    position: relative;
+}
+
+.coverImage {
+    width: 100%;
+    height: 100%;
+}
+
+.thumbCard {
+    display: flex;
+    color: white;
+    background-color: rgb(172, 172, 172);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    /* padding: 20px; */
+}
+
+.eduColor {
+    background-color: #c7212f;
+}
+
+.workColor {
+    background-color: #a31c44;
+}
+
+.industryColor {
+    background-color: #f26a2e;
+}
+
+.sustainableColor {
+    background-color: #f89d2a;
+}
+
+.genColor {
+    background-color: #ef402d;
+}
+
+.inclColor {
+    background-color: #4ca146;
+}
+
+.ythColor {
+    background-color: #fbc412;
+}
+
+.firstPage {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.firstPage i {
+    font-size: 48px;
+    margin-right: 10px;
+}
+
+.secondPage {
+    display: none;
+}
+
+.goal:hover .thumbCard {
+    bottom: 0;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.goal:hover .firstPage {
+    display: none;
+}
+
+.goal:hover .secondPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.smallImg {
+    height: 100px;
+    width: 100px;
+}
+
+.naslov {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+.wdth {
+    width: 35%;
+}
+
+.descTxt {
+    font-size: 20px;
+}
+
+.mainWrapperD {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+}
+
+.triCar {
+    display: flex;
+    flex-direction: row;
+}
+
+.cetruUJ1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.cetruUJ1 .gornja {
+    display: flex;
+    flex-direction: row !important;
+    height: 50% !important;
+    width: 100% !important;
+}
+
+.cetruUJ1 .donjaDva {
+    display: flex;
+    height: 50% !important;
+    flex-direction: row !important;
+    width: 100% !important;
+}
+
+.descSmall {
+    font-size: 13px;
+}
+
+.infoMore {
+    border: 1px solid white;
+    text-align: center;
+    padding: 15px;
+}
+
+.moreInfoDec {
+    font-size: 10px;
+    margin-right: 17px;
+}
+
+.fullWidth {
+    width: 100% !important;
+}
+
+.moreInfoWrapper {
+    display: flex;
+    justify-content: flex-end
+}
+
+.textDecoration {
+    text-decoration: none;
+}
+
+.hrStyleHalf {
+    width: 50%;
+    align-self: center;
+}
+
+/* end declaration css */
+/* donate */
+.navbarDon {
+    overflow: hidden;
+    background-color: red;
+    display: flex;
+}
+
+/* Navigation links */
+
+.navbarDon a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+
+.navbarDon a:hover {
+    background-color: rgb(252, 63, 63);
+}
+
+/* end of donate */
+
+.socialMob {
+    display: none;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.homeeTeam {
+    background-color: #333333;
+}
+
+
+.terms span {
+    font-family: unset;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.w3-light-greyy,
+.w3-hover-light-grey:hover,
+.w3-light-gray,
+.w3-hover-light-gray:hover {
+    color: rgb(102, 102, 102) !important;
+    background-color: #f3f3f3 !important;
+    border-radius: 10px !important;
+    -webkit-box-shadow: 5px 9px 19px -5px rgba(91, 91, 91, 0.48);
+    box-shadow: 5px 9px 19px -5px rgba(91, 91, 91, 0.48);
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Fading animation news*/
+
+.fadeN {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.txtCenter {
+    text-align: center !important;
+}
+
+.home {
+    background-color: #333333 !important;
+}
+
+.homee {
+    background-color: #333333 !important;
+}
+
+.home:hover {
+    background-color: #666666 !important;
+}
+
+/* flex */
+
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+.gal {
+    background-color: #f1f1f1;
+    width: max-content;
+    height: 100px;
+}
+
+.gal img {
+    width: 100%;
+}
+
+.gal img:hover {
+    background-color: rgb(20, 19, 19);
+    transition: 1s ease;
+    color: wheat;
+}
+
+.hide {
+    display: none;
+}
+
+.gal:hover+.hide {
+    display: block !important;
+    color: red !important;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.test {
+    background: rgb(255, 129, 159);
+    background: linear-gradient(183deg, rgba(255, 129, 159, 0.4962359943977591) 0%, rgba(255, 255, 255, 1) 100%);
+    border-radius: 5px;
+}
+
+/* supportDivs */
+
+.flx {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flxInner {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flxInnerr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.flxInner img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.flxInner:hover img {
+    width: 100%;
+    -webkit-filter: none;
+}
+
+.half {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.half img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100%;
+    margin: auto;
+}
+
+.half:hover img {
+    width: 100%;
+    -webkit-filter: none;
+}
+
+.halff {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.halff img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 50%;
+    margin-left: 115%;
+    margin-right: 25%;
+}
+
+.halff:hover img {
+    width: 50%;
+    -webkit-filter: none;
+}
+
+.hrStil {
+    border-top: 1px dashed #333333;
+    width: 50%;
+    margin: auto;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeN {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeN {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.fade {
+    color: #999999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    -webkit-transition-property: color, text;
+    -webkit-transition-duration: 1s, 1s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property: color, text;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property: color, text;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: linear, ease-in;
+}
+
+.fadeN {
+    color: #999999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    -webkit-transition-property: color, text;
+    -webkit-transition-duration: 1s, 1s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property: color, text;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property: color, text;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: linear, ease-in;
+}
+
+.fade:hover {
+    color: #CB2026;
+}
+
+.fadeN:hover {
+    color: #CB2026;
+}
+
+.fb:hover {
+    color: #43609c !important;
+}
+
+.in:hover {
+    color: #0a66c2 !important;
+}
+
+.yt:hover {
+    color: #ff0000 !important;
+}
+
+.ig:hover {
+    background: linear-gradient(335deg, rgba(62, 55, 233, 1) 0%, rgba(230, 5, 97, 1) 35%, rgba(252, 213, 122, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.gh:hover {
+    color: black;
+}
+
+/* memCards za cijene Membership*/
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.prices h2 {
+    background-color: #2980b9;
+    margin: 3px;
+    border-radius: 15px;
+    padding-block: 20px;
+    padding-inline: 10px;
+}
+
+.pricesFablaber h2 {
+    background-color: #86d4a8;
+}
+
+.pricesFabrikator h2 {
+    background-color: #7cafd4;
+}
+
+.pricesFabmaker h2 {
+    background-color: #4983ca;
+}
+
+.pricesFabiznis h2 {
+    background-color: #f38060;
+}
+
+/* flipcard */
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    /*height: 785px;*/
+    height: 800px;
+    transition: 0.4s ease-in-out;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    /* transform: scale(0.7,0.7); */
+}
+
+.transform {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    border-radius: 15px;
+    background-color: #2170a5;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-title-front {
+    width: 100%;
+    background-color: #2980b9;
+    color: white;
+    padding: 15px;
+}
+
+.flip-card-back {
+    border-radius: 15px;
+    background-color: #558fb6;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+
+.see_more {
+    color: #3892ce;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-block: 20px;
+}
+
+.memCards {
+    width: 30%;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.3;
+}
+
+.fablaber {
+    background-color: #5bb381;
+}
+
+.fablaberFlip {
+    background-color: #86d4a8;
+}
+
+.fabrikator {
+    background-color: #5983a0;
+}
+
+.fabrikatorFlip {
+    background-color: #7cafd4;
+}
+
+.fabmaker {
+    background-color: #36659D;
+}
+
+.fabmakerFlip {
+    background-color: #4983ca;
+}
+
+.fabiznis {
+    /* background-color: #5983a0; */
+    background-color: #D76544;
+}
+
+.fabiznisFlip {
+    background-color: #f38060;
+}
+
+
+/* habureger center */
+
+.nav-head {
+    align-content: center;
+}
+
+/* equipment margina */
+
+.margina {
+    margin-left: 4%;
+}
+
+.pngg img {
+    width: 100%;
+}
+
+.homeeA {
+    background-color: #333333 !important;
+}
+
+/* added 3/8 */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Donate */
+
+.titleD {
+    text-align: center;
+}
+
+.DContent {
+    padding: 10px 10px 10px 10px !important;
+    text-align: justify;
+}
+
+.flexDonate {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.flexInnerDonate {
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 23px 6px rgba(159, 155, 155, 0.53);
+    -webkit-box-shadow: 10px 10px 23px 6px rgba(159, 155, 155, 0.53);
+    -moz-box-shadow: 10px 10px 23px 6px rgba(159, 155, 155, 0.53);
+    margin: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flexInnerDonate p {
+    padding: 0px 5px 0px 0px;
+}
+
+.homeeD {
+    background-color: #333333;
+}
+
+.flexInnerDonate:hover {
+    cursor: pointer;
+    background-color: rgb(235, 235, 235) !important;
+    transition: .3s ease-in-out;
+}
+
+.lightBg {
+    background-color: rgb(248, 244, 244);
+}
+
+/* Donate end */
+
+/* edu */
+
+.filtersGroup {
+    margin-top: 15px;
+    background-color: #e9e9e9;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Style the buttons */
+.btnE {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #69aad6;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+}
+
+.planBtn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: rgb(243, 139, 21);
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+}
+
+
+.btnC {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: rgb(40, 185, 88);
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+}
+
+
+.btnE:hover {
+    background-color: #ddd;
+}
+
+.planBtn:hover {
+    background-color: rgb(243, 158, 61);
+}
+
+.activeE {
+    background-color: #666;
+    color: white;
+}
+
+.activeE:hover {
+    background-color: #666;
+    color: rgb(255, 255, 255);
+}
+
+/* The navigation menu */
+.navbarEdu {
+    overflow: hidden;
+    background-color: #69AAD6;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarEdu a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbarEdu a:hover {
+    background-color: #89BBDE;
+}
+
+* {
+    box-sizing: border-box
+}
+
+
+/* edu end */
+
+
+/* expert */
+/* The navigation menu */
+.navbarExpert {
+    overflow: hidden;
+    background-color: #a3a09d;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarExpert a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbarExpert a:hover {
+    background-color: #CDDC39;
+}
+
+.neonColor {
+    color: #B7C777
+}
+
+.homeeEx {
+    background-color: #333333 !important;
+}
+
+.vlntContainerExpert {
+    display: flex;
+    justify-content: center;
+}
+
+.cardExpert {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-headerExpert img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-bodyExpert p {
+    font-size: 13px;
+    margin: 0 0 40px;
+    text-align: justify;
+}
+
+.card-bodyExpert h1 {
+    margin: auto;
+}
+
+.card-bodyExpert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    /* min-height: 181px; */
+    min-height: 250px;
+}
+
+
+.cardLab {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-headerLab img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-bodyLab p {
+    font-size: 13px;
+    margin: 0 0 40px;
+    text-align: justify;
+}
+
+.card-bodyLab h1 {
+    margin: auto;
+}
+
+.card-bodyLab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    /* min-height: 181px; */
+    min-height: 300px;
+}
+
+
+.tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: auto;
+    padding: 8px;
+}
+
+.tag-teal {
+    background-color: #F98329;
+}
+
+.tag-teal:hover {
+    background-color: #fc9e57;
+}
+
+/* expert end */
+
+/* news */
+/* The navigation menu */
+.navbarNews {
+    overflow: hidden;
+    background-color: #4646FF;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarNews a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbarNews a:hover {
+    background-color: #0000CE;
+}
+
+.homeeNews {
+    background-color: #333333;
+}
+
+/* end of news */
+
+/* firstFab */
+.firstFabSpace {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.uvodFontSizeFontSize {
+    font-size: 20px;
+}
+
+.providna {
+    opacity: 0.5;
+}
+
+.sponsorsImg {
+    text-align: center;
+}
+
+.sponsorsImg img {
+    transition: 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+.sponsorsImg img:hover {
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.hrLight {
+    border: 1px solid #f3f3f3;
+}
+
+/* end firstFab */
+
+/* index */
+/* The navigation menu */
+.navbarIndex {
+    overflow: hidden;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(67, 67, 164, 1) 54%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+/* Navigation links */
+.navbarIndex a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbarIndex a:hover {
+    background-color: #E60000;
+}
+
+
+.makers {
+    font-weight: bold;
+    /* font-size: 300%; */
+    color: white;
+    letter-spacing: 15px;
+    margin-top: -7%;
+    font-family: Poppins, Hack, sans-serif;
+    text-align: center;
+}
+
+/* index end */
+/* Fabjob */
+/* The navigation menu */
+.navbarJob {
+    overflow: hidden;
+    background-color: #A4373A;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarJob a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Navigation links Initiatives */
+.navbarInit {
+    overflow: hidden;
+    background-color: #00bfa5;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarInit a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+
+
+.navbarJob a:hover {
+    background-color: red;
+}
+
+.homeeJ {
+    background-color: #A4373A;
+}
+
+/* end of Fabjob */
+
+/* membership */
+/* The navigation menu */
+.navbarMem {
+    overflow: hidden;
+    background-color: #D76544;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarMem a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbarMem a:hover {
+    background-color: #fa7551;
+}
+
+.homeeMem {
+    background-color: #333333;
+}
+
+.marginaPX {
+    margin-left: 0% !important;
+}
+
+.containerWho p {
+    text-align: center !important;
+    padding: 10px 15px;
+}
+
+.flexWho {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.who {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 0px;
+    /*5px rounded corners */
+    background-color: #ffffff;
+    text-align: center;
+    float: left;
+    width: 30%;
+    /* padding: 5px 5px; */
+    margin: 1%;
+
+}
+
+.who:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* end membership */
+
+/* labs */
+
+/* The navigation menu */
+.navbarLab {
+    overflow: hidden;
+    background-color: #79BEB3;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarLab a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbarLab a:hover {
+    background-color: #95D0B9;
+}
+
+.containerLab {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag-tir {
+    background-color: #79beb3;
+}
+
+.homeeLab {
+    background-color: #333333;
+}
+
+/* end labs */
+
+/* partnership */
+/* The navigation menu */
+.navbarPartnerhip {
+    overflow: hidden;
+    background-color: #FF819F;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarPartnerhip a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbarPartnerhip a:hover {
+    background-color: #FF0F4B;
+}
+
+.homeeP {
+    background-color: #333333;
+}
+
+/* end partnership */
+
+/* projects */
+
+/* The navigation menu */
+
+.navbarProjects {
+    overflow: hidden;
+    background-color: #D9000B;
+    display: flex;
+}
+
+/* Navigation links */
+
+.navbarProjects a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.homeeP {
+    background-color: #333333;
+}
+
+/* Add a red background color to navigation links on hover */
+
+.navbarProjects a:hover {
+    background-color: #FF1C27;
+}
+
+.flip-card-innerP {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tile:hover .flip-card-innerP {
+    transform: rotateY(180deg);
+}
+
+.flip-card-frontP,
+.flip-card-backP {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-backZ {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-frontP {
+    /* background-color: #bbb; */
+    color: black;
+}
+
+.flip-card-backZ {
+    background-color: #00bfa5;
+    color: rgb(255, 254, 254);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.flip-card-backP {
+    background-color: #232ca0;
+    color: rgb(255, 254, 254);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.tiles-wrapper {
+    margin: 0 auto;
+    max-width: 1716px;
+    display: flex;
+    padding: 45px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tile {
+    width: 31%;
+    border: 1px solid black;
+    position: relative;
+    margin-top: 20px;
+    perspective: 1000px;
+    height: 570px;
+}
+
+
+.tile p {
+    text-align: justify;
+}
+
+
+/* .tile:hover  {
+    background-color: #232ba02f;
+    cursor: pointer;
+    color: white;
+} */
+
+.tile:hover .tile-body p {
+    text-decoration: underline;
+}
+
+
+.tile:hover .tile-body .tag {
+    border: 1px solid white !important;
+}
+
+
+.tile-body {
+    padding: 20px;
+    transition: 0.4s;
+}
+
+
+.tile-tagsProjects {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.tagProject {
+    border: 1px solid black !important;
+    padding: 2px 8px !important;
+}
+
+.tagProject:not(:first-child) {
+    margin-left: 10px !important;
+}
+
+.special-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 0px 10px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    z-index: 100;
+}
+
+.tiles-filters {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+
+/* end projects */
+
+/* team */
+/* The navigation menu */
+.navbarTeam {
+    overflow: hidden;
+    background-color: #F98329;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarTeam a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbarTeam a:hover {
+    background-color: #F8976D;
+}
+
+
+.vlntContainerTeam {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+}
+
+.cardTeam {
+    margin: 10px;
+    background-color: #f6f6f6;
+    color: #090909;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 260px;
+}
+
+.cardTeam:hover {
+    cursor: pointer;
+    color: #c17234;
+}
+
+.cardTeam-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardTeam-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 160px;
+}
+
+.homee {
+    background-color: #333333 !important;
+}
+
+.flexTeam {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.flexTeam header {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #fac297;
+    text-align: center;
+    color: #c17234;
+}
+
+.flexInnerTeam {
+    width: 25%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 23px 6px rgba(159, 155, 155, 0.53);
+    -webkit-box-shadow: 10px 10px 23px 6px rgba(159, 155, 155, 0.53);
+    -moz-box-shadow: 10px 10px 23px 6px rgba(159, 155, 155, 0.53);
+    margin: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 290px !important;
+    box-sizing: border-box;
+}
+
+.flexInnerTeam p {
+    padding: 0px 5px 0px 0px;
+    width: 100%;
+    text-align: center;
+    padding-inline: 20px;
+}
+
+
+.bck {
+    background-color: #a1a1a128;
+    color: #f56f09cb;
+}
+
+.bck:hover {
+    background-color: #eeeeee;
+    color: #7c4a24;
+}
+
+
+.flexDivInner {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.marginAuto {
+    margin: auto !important;
+}
+
+.imgRound {
+    width: 100px;
+    margin-top: 2%;
+}
+
+.liBg {
+    background-color: #F8976D;
+}
+
+.mailAlignment {
+    text-align: center;
+}
+
+/* end team */
+
+/* education */
+
+.homeeEdu {
+    background-color: #333333;
+}
+
+.cardEdu {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    padding-block: 10px;
+    /* width: 300px; */
+    width: 20%;
+    padding-inline: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.cardEdu:hover {
+    margin: 10px;
+    background-color: #ececec;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cardEdu h1 {
+    color: #666666;
+    text-align: center;
+}
+
+.cardEdu-header img {
+    width: 100%;
+    /* height: 200px; */
+    /* object-fit: cover; */
+}
+
+.cardEdu-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+}
+
+.tagEdu {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    /* margin: 0; */
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tag-tealEdu {
+    background-color: #89BBDE;
+}
+
+.coursesWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardEdu-body p {
+    font-size: 13px;
+    /* margin: 0 0 40px; */
+}
+
+/* end education */
+
+/* Initiative */
+/* The navigation menu */
+.navbarInit {
+    overflow: hidden;
+    background-color: #00bfa5;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarInit a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a floroscent green background color to initiatives navigation links on hover */
+
+.navbarInit a:hover {
+    background-color: #006457;
+}
+
+/* end Initiatives*/
+
+/* Job */
+/* The navigation menu */
+.navbarJob {
+    overflow: hidden;
+    background-color: #A4373A;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarJob a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a floroscent green background color to initiatives navigation links on hover */
+
+.navbarJob a:hover {
+    background-color: red;
+}
+
+.homeeP {
+    background-color: #00bfa5;
+}
+
+/* end wiki */
+
+
+/* Add a red background color to Job navigation links on hover */
+
+
+.lightGrayBold {
+    font-weight: bold;
+    color: #707070;
+}
+
+.contactInfo {
+    text-align: left;
+}
+
+.terms {
+    text-align: left;
+}
+
+/* servisi poravnjanje drugog boxa */
+
+.centrirano {
+    margin-left: 30%;
+}
+
+/*nermina sredjuje box slika na projects.htm */
+
+.sminka:hover {
+    transform: scaleX(-1);
+}
+
+.sminka {
+    border-radius: 15px;
+    padding: 8px;
+}
+
+/*nermina sredjuje slike na projects */
+
+.tab {
+    margin: 3%;
+}
+
+/* Margins on pages */
+
+.edit {
+    margin: 15%;
+    font-size: 16px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.edit p {
+    line-height: 180%;
+    text-align: justify !important;
+}
+
+.centerTitle {
+    text-align: center;
+}
+
+.centerTitle hr {
+    margin: auto;
+}
+
+.titleAlign {
+    text-align: left;
+}
+
+/* services */
+
+/* The navigation menu */
+.navbarServices {
+    overflow: hidden;
+    background-color: #373d48;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarServices a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a floroscent green background color to initiatives navigation links on hover */
+
+.navbarServices a:hover {
+    background-color: #687181;
+}
+
+.homeeService {
+    background-color: #333333;
+}
+
+
+/* .longTxt{
+font-size:34px !important;
+margin-bottom: 12% !important;
+} */
+
+.iconStyle {
+    width: 10% !important;
+    margin-left: auto;
+    margin-top: 0.5%;
+}
+
+.hrServices {
+    width: 50%;
+    color: 1px solid whitesmoke !important;
+    margin: auto;
+}
+
+/* .Pbg{
+background-color: #2b399067 !important;
+color: white;
+} */
+
+.hrServicesP {
+    border: 2.5px solid #2b3990;
+    width: 100%;
+    margin: auto;
+    background-color: #2b3990;
+}
+
+/* .Rpbg{
+background-color: #0a75e879 !important;
+color: white;
+}  */
+
+.hrServicesR {
+    border: 2.5px solid #0a77e8;
+    width: 100%;
+    margin: auto;
+    background-color: #0a77e8;
+}
+
+/* .Dbg3{
+background-color: #1ea4f283 !important;
+color: whitesmoke;
+} */
+
+.hrServices3D {
+    border: 2.5px solid #1ea6f2;
+    width: 100%;
+    margin: auto;
+    background-color: #1ea6f2;
+}
+
+/* .Ipbg{
+background-color: #2789b086 !important;
+color: white;
+} */
+
+.hrServicesI {
+    border: 2.5px solid #2789b0;
+    width: 100%;
+    margin: auto;
+    background-color: #2789b0;
+}
+
+/*
+.eduS{
+background-color: #00d4f58a !important;
+color: white;
+} */
+
+.hrServicesE {
+    border: 2.5px solid #00d5f5;
+    width: 100%;
+    margin: auto;
+    background-color: #00d5f5;
+}
+
+.box {
+    z-index: 1;
+    position: relative;
+    background-color: #dd4f3934 !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.services-section {
+    width: 100%;
+    /* background-color: #333333; */
+    padding: 30px 0px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .image-section{
+width: 40%;
+} */
+
+.service-card {
+    display: flex;
+    padding: 0px;
+    cursor: pointer;
+    width: 48%;
+    color: white;
+    /* border-radius: 10px 0px 0px 10px; */
+    background-color: #202020;
+    margin: 10px;
+    transition: 0.4s;
+    /* justify-content: center !important; */
+    margin: auto;
+    margin-top: 1% !important;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.service-card:hover {
+    transform: scale(0.98);
+    transition: 0.4s;
+    /* outline: 1px solid #702c2c;
+-moz-outline-radius: 10px;
+outline-offset: 10px; */
+}
+
+.image-section {
+    overflow: hidden;
+    width: 40%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.text-section {
+    width: 60%;
+    /* padding: 20px 30px; */
+    /* padding-inline: 13px; */
+    text-align: center;
+}
+
+.lab-imgP {
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: -100px; */
+    /* namjestas po X osi da se vidi bolji neki dio slike */
+    background-image: url('../slike/services/product.png');
+}
+
+.lab-imgI {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../slike/services/rapid.png');
+    border-radius: 0px 10px 10px 0px;
+}
+
+.lab-img3D {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../slike/services/3d.png');
+}
+
+.lab-imgRE {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../slike/services/reverse.png');
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.lab-imgIP {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../slike/services/ip.png');
+    /*border-radius: 0px 10px 10px 0px;*/
+}
+
+.lab-imgEdu {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../slike/services/edu.png');
+    border-radius: 0px 10px 10px 0px;
+}
+
+.box {
+    background-color: #2b399046 !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.testI {
+    text-align: center !important;
+    background-color: rgb(58, 58, 58);
+    /* border-radius: 10px 10px 10px 10px; */
+    width: 100%;
+    padding: 3px;
+}
+
+/* membership */
+
+.trajanje {
+    font-size: 25px !important;
+}
+
+/* projects */
+
+.txtDescP {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* educationMargins */
+
+.editE {
+    margin: 25%;
+    font-size: 16px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.editE p {
+    line-height: 180%;
+    text-align: justify;
+}
+
+/* fabinitNAv */
+.homeeI,
+.homeeSupport,
+.homeeProjects {
+    background-color: #333333;
+}
+
+.containerLab p {
+    text-align: left;
+}
+
+/*end fabinitNAv */
+
+/*.projectsFilterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+/*
+}*/
+
+/* The "show" class is added to the filtered elements */
+/*.show {
+  display: block;
+}*/
+
+.lanFlags{
+    display: none;
+}
+
+/* ******************************************************* */
+
+@media only screen and (min-width: 1500px) {
+    .cardEdu {
+        width: 20% !important;
+        margin: 1% !important;
+        flex-direction: column !important;
+    }
+
+    .flexInnerTeam {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .flxInner img {
+        width: 80%;
+    }
+
+    .flxInner:hover img {
+        width: 80%;
+    }
+
+    .flexInnerTeam {
+        width: 48%;
+    }
+}
+
+
+/* unusual team */
+@media only screen and (max-width: 1400px) {
+
+    /*.flexInnerTeam{
+        width: 300px;
+    }*/
+    .NameTitle {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .flexInnerTeam {
+        width: 300px;
+    }
+
+    .cardTeam {
+        width: 22%;
+        margin: auto !important;
+        height: min-content !important;
+    }
+
+    .flexInnerTeam {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .flexInnerTeam {
+        width: 300px;
+    }
+
+    .smallerTitle {
+        font-size: 1.5em !important;
+    }
+
+    .smallImg {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .cetruUJ1 {
+        display: flex;
+        flex-direction: column;
+        width: 80% !important;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    /* .edit {
+        margin: 20%;
+        margin-top: -4% !important;
+        margin-bottom: 0%;
+    } */
+    .descSmall {
+        font-size: 8.7px;
+    }
+
+    .descTxt {
+        font-size: 10px;
+    }
+
+    .descTxt1 {
+        font-size: 10px !important;
+    }
+
+    /* expertClass */
+    .h3Resize {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    /* team */
+    .NameTitle {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .flexInnerTeam {
+        width: 300px;
+    }
+
+    .cardTeam {
+        width: 23.5% !important;
+        margin: auto !important;
+    }
+
+
+    /* end team */
+}
+
+@media only screen and (max-width: 1100px) {
+    .flexInnerTeam {
+        width: 300px;
+    }
+
+    .grid {
+        display: none;
+    }
+
+    /* projects */
+    .tile {
+        width: 45%;
+    }
+
+    .smallerTitle {
+        font-size: 1.5em !important;
+    }
+
+    /* end projects */
+}
+
+/* unusual for projects */
+@media only screen and (max-width: 1090px) {
+    .flexInnerTeam {
+        width: 300px;
+    }
+
+    .flip-card-backP h3 {
+        font-size: 12px;
+    }
+
+    .flip-card-backP p {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .flexInnerTeam {
+        width: 47%;
+        min-height: 270px !important;
+    }
+
+    .cardEdu {
+        width: 30% !important;
+        margin: 1% !important;
+        flex-direction: column !important;
+    }
+
+    .w3-main {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+
+    .cardsWrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .memCards {
+        margin-bottom: 30px;
+        width: 46%;
+    }
+
+    .flip-card {
+        width: 400px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1020px) {
+    .flexInnerTeam {
+        width: 48%;
+    }
+
+    .cardEdu {
+        width: 30% !important;
+        margin: 1% !important;
+        flex-direction: column !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 950px) {
+    .flexInnerTeam {
+        width: 300px;
+    }
+
+    .cardEdu {
+        width: 40% !important;
+        margin: 1% !important;
+        flex-direction: column !important;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .tile {
+        width: 45%;
+    }
+
+    .flexInnerTeam {
+        width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 840px) {
+    .flexInnerTeam {
+        width: 300px;
+    }
+
+    .tile {
+        width: 70% !important;
+    }
+
+    .tile .txtChangeSmaller h3,
+    .tile .txtChangeSmaller p {
+        font-size: smaller !important;
+    }
+}
+
+/* end unusual for projects */
+
+@media only screen and (max-width: 768px) {
+    .memCards {
+        width: 51%;
+    }
+
+    .vlntContainerTeam {
+        flex-wrap: wrap;
+    }
+
+    .cardTeam {
+        width: 45% !important;
+        margin-top: 35px !important;
+    }
+}
+
+
+/* AllMedia */
+
+@media only screen and (max-width: 600px) {
+    .firstFabSpace {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textSide {
+        text-align: center;
+    }
+
+    .mailAlignment {
+        margin: auto;
+    }
+
+    .navbarIndex a {
+        padding: 8px 16px !important;
+    }
+
+    .contentHomeNav {
+        height: 100vh;
+        overflow: scroll;
+        padding-bottom: 25px;
+    }
+
+    .flxInner a {
+        display: contents;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+    }
+
+    .nav-content {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-head {
+        align-items: center;
+        margin-bottom: 1%;
+    }
+
+    .service-card {
+        display: flex;
+        width: 100% !important;
+        justify-content: center;
+        flex-direction: column !important;
+        /* kockice */
+    }
+
+    .image-section {
+        width: 100% !important;
+        height: 150px;
+        border-radius: 10px 10px 0px 0px !important;
+    }
+
+    .text-section {
+        width: 100% !important;
+    }
+
+    .services-section {
+        padding: 15px !important;
+    }
+
+    .services-section .service-card {
+        margin-top: 5% !important;
+    }
+
+    .lab-img3D {
+        border-radius: 10px 10px 0px 0px !important;
+    }
+
+    .lab-imgRE,
+    .lab-imgEdu {
+        border-radius: 10px 10px 0px 0px !important;
+    }
+
+    .lab-imgIP {
+        border-radius: 10px 10px 0px 0px !important;
+    }
+
+    .lab-imgI {
+        border-radius: 10px 10px 0px 0px !important;
+    }
+
+    .trajanje {
+        font-size: 18px !important;
+    }
+
+    /* direction of img in services.htm */
+    .changedir {
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+
+    .changedir img {
+        border-radius: 0px 0px 0px 0px !important;
+    }
+
+    /* end */
+    /* classes from courseDetails */
+    .bg {
+        height: 20%;
+    }
+
+    .flexCD {
+        display: flex;
+        width: 80% !important;
+        justify-content: space-evenly;
+        /* background-color: rgb(43, 22, 22); */
+        margin: auto;
+        margin-top: -30% !important;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        flex-direction: column;
+    }
+
+    .flexCD div {
+        font-size: 13px;
+    }
+
+    .flexCD button {
+        width: 100% !important;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .mainL {
+        padding: 8px !important;
+    }
+
+    .btnPrijava {
+        background-color: #4CAF50;
+        padding: 5px;
+        border: 2px solid #4CAF50;
+        color: white;
+        font-size: medium;
+        margin-top: 3% !important;
+    }
+
+    .spanSt {
+        font-size: 15px !important;
+        font-weight: bold;
+    }
+
+    /*end of classes from courseDetails */
+    /* classes from declaration */
+    .goals {
+        flex-direction: column;
+    }
+
+    .wdth {
+        min-width: 45% !important;
+    }
+
+    .descTxt {
+        font-size: 17px !important;
+    }
+
+    .smallImg {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .mainWrapperD {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .goalsWrapper {
+        flex-direction: column;
+    }
+
+    .goalsWrapper .goal {
+        margin: 1%;
+    }
+
+    .mainWrapperD .cetruUJ1 {
+        width: 99% !important;
+        height: 400px !important;
+        margin: auto;
+    }
+
+    /* end of classes from declaration */
+    /* donate */
+    .flexDonate {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .flexInnerDonate {
+        width: 90% !important;
+    }
+
+    /* donate end */
+    /* edu */
+    .btnE,
+    .planBtn,
+    .btnC {
+        padding: 5px 8px;
+        margin: 1%;
+    }
+
+    /* edu end */
+    /* news */
+    .homeeNews {
+        background-color: transparent !important;
+    }
+
+    /* end news */
+
+    /* expert */
+    .homeeEx {
+        background-color: #a3a09d !important;
+    }
+
+    .cardExpert {
+        width: 80%;
+        margin: auto !important;
+        margin-top: 3% !important;
+    }
+
+    .cardLab {
+        width: 80%;
+        margin: auto !important;
+        margin-top: 3% !important;
+    }
+
+
+    .vlntContainerExpert {
+        flex-direction: column;
+        margin: 1%;
+    }
+
+    /* end of expert */
+
+    /* firstFab */
+    .sponsorsImg img {
+        margin: 0.5% !important;
+    }
+
+    /* end firstFab */
+
+    /* index */
+
+    .grid {
+        display: unset;
+    }
+
+    .makers {
+        text-align: center;
+        letter-spacing: 15px;
+        /* font-size: 100%; */
+        font-family: Poppins, Hack, sans-serif;
+        /* background: linear-gradient(90deg, #000, #fff, #000); */
+        letter-spacing: 5px;
+        /* -webkit-background-clip: text; */
+
+    }
+
+    .socialMob {
+
+        flex-direction: row;
+    }
+
+    .socialMob i {
+        color: white;
+    }
+
+    .socialMob a {
+        background-color: transparent !important;
+    }
+
+    /* end index */
+    /* fabJob */
+    .homeeJ {
+        background-color: #A4373A !important;
+    }
+
+    /* fabJob end */
+
+    /* membership */
+    .homeeMem {
+        background-color: transparent !important;
+    }
+
+    .marginaPX {
+        padding: 10px;
+    }
+
+    .who {
+        width: 100% !important;
+        height: max-content !important;
+        padding: 2px 2px;
+    }
+
+    /* end membership */
+
+    /* labs */
+    .homeeLab {
+        background-color: transparent !important;
+    }
+
+    .containerLab {
+        width: 100%;
+        flex-direction: column;
+        margin: 0%;
+        align-items: center;
+    }
+
+    /*end labs */
+    /* partnership */
+
+    .homeeP {
+        background-color: unset !important;
+    }
+
+    /* end partnership */
+
+    /* projects */
+    .tiles-wrapper {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .tile {
+        width: 100% !important;
+        margin-top: 5px;
+    }
+
+    .visibility-of {
+        display: none;
+    }
+
+    .flip-card-innerP {
+        transform: scale(1);
+    }
+
+    .tiles-filters {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-inline: 35px;
+    }
+
+    .flip-card-backP {
+        position: relative;
+    }
+
+    .flip-card-backZ {
+        position: relative;
+    }
+
+    .homeeP {
+        background-color: unset !important;
+    }
+
+    /*end projects */
+
+    /* support */
+    .mob {
+        width: 52%;
+    }
+
+    /* end support */
+    /* team */
+    .flexTeam {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .flexInnerTeam {
+        width: 90% !important;
+    }
+
+    .vlntContainerTeam {
+        flex-direction: column;
+        margin: 1%;
+        width: 100% !important;
+    }
+
+    .vlntContainerTeam .cardTeam {
+        width: 80% !important;
+        margin: auto !important;
+        margin-top: 3% !important;
+    }
+
+    .homeeTeam {
+        background-color: unset !important;
+    }
+
+    /* end team */
+
+    /* education */
+    .homeeEdu {
+        background-color: #69AAD6 !important;
+    }
+
+    .cardEdu {
+        width: 100% !important;
+        margin: 1% !important;
+        flex-direction: column !important;
+    }
+
+    /*end education */
+
+    .homeeW {
+        background-color: green !important;
+    }
+
+    .marginaR {
+        margin-right: 2%;
+        margin-left: 3%;
+    }
+
+    .homeeService,
+    .homeeI,
+    .homeeSupport,
+    .homeeProjects {
+        background-color: transparent !important;
+    }
+
+    .social {
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 5px;
+        align-items: center;
+        padding-block: 20px;
+        padding-inline: 5px;
+        text-align: center;
+    }
+
+    .halff img {
+        margin-left: 0%;
+    }
+
+    .terms {
+        margin-top: 7%;
+    }
+
+    .memTab {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .flxInner img {
+        width: 80%;
+        -webkit-filter: none;
+        justify-content: space-evenly !important;
+    }
+
+    .half img {
+        width: 50%;
+        -webkit-filter: none;
+    }
+
+    .cardsWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .memTab {
+        display: none;
+    }
+
+    .memCards {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .margina2 {
+        margin: 3%;
+    }
+
+    .flipp {
+        display: inline;
+        font-size: 20px !important;
+    }
+
+    .pngg img {
+        width: 100%;
+    }
+
+    .flip-card-inner {
+        transform: scale(1);
+    }
+
+    .terms,
+    .contactInfo {
+        text-align: unset !important;
+    }
+
+    .edit {
+        margin: 4% !important;
+        font-size: 16px !important;
+        text-align: left !important;
+    }
+
+    .homeeA {
+        background-color: #988DAD !important;
+    }
+
+    .homeeD {
+        background-color: red !important;
+    }
+
+    .lanFlags {
+        display: flex;
+        justify-content: center;
+    }
+
+    .lanFlags img {
+        width: 30px !important;
+    }
+    .lanFlagsDesk{
+        display: none;
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.navbarIndex .noHover:hover {
+    background-color: transparent !important;
+}

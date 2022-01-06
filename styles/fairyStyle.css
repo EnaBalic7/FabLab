@@ -1,0 +1,300 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navLogoMob {
+    display: none;
+	float:right;
+}
+
+/* news */
+/* The navigation menu */
+.navbarNews {
+    overflow: hidden;
+    background-color: #4646FF;
+    display: flex;
+}
+
+/* Navigation links */
+.navbarNews a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbarNews a:hover {
+    background-color: #0000CE;
+}
+
+.navPosition {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* habureger center */
+
+.nav-head {
+    align-content: center;
+}
+
+.homeeNews {
+    background-color: #333333;
+}
+
+
+
+#hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(247, 247, 247);
+    margin-top: 5px;
+    margin-top: 15%;
+    margin-right: 10px;
+}
+
+
+#hamburger {
+    display: none;
+}
+
+.nav-content a {
+    font-family: "Poppins", sans-serif
+}
+
+.homee {
+    background-color: #333333;
+}
+
+/* footerIcn */
+.iconBg {
+    color: #999999;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.footer a {
+    color: #333333;
+}
+
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeN {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeN {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.fade {
+    color: #999999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    -webkit-transition-property: color, text;
+    -webkit-transition-duration: 1s, 1s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property: color, text;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property: color, text;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: linear, ease-in;
+}
+
+.fadeN {
+    color: #999999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    -webkit-transition-property: color, text;
+    -webkit-transition-duration: 1s, 1s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property: color, text;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property: color, text;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: linear, ease-in;
+}
+
+.fade:hover {
+    color: #CB2026;
+}
+
+.fadeN:hover {
+    color: #CB2026;
+}
+
+.fb:hover {
+    color: #43609c !important;
+}
+
+.in:hover {
+    color: #0a66c2 !important;
+}
+
+.yt:hover {
+    color: #ff0000 !important;
+}
+
+.ig:hover {
+    background: linear-gradient(335deg, rgba(62, 55, 233, 1) 0%, rgba(230, 5, 97, 1) 35%, rgba(252, 213, 122, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.gh:hover {
+    color: black;
+}
+
+
+.contactInfo {
+    text-align: left;
+}
+
+.textDecoration {
+    text-decoration: none;
+}
+
+.site-header-top {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+@media only screen and (max-width: 600px) {
+	
+    .navLogoMob {
+        float: left;
+        height: 48px;
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+    }
+
+    .nav-head {
+		display: none;
+        align-items: center;
+        margin-bottom: 1%;
+    }
+
+    .homeeNews {
+        background-color: transparent;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .nav-content {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .navLogo {
+        float: left;
+        height: 52px;
+    }
+
+
+    .footer {
+        flex-direction: column;
+        padding: 5px;
+        align-items: center;
+        padding-block: 20px;
+        padding-inline: 5px;
+        text-align: center;
+    }
+
+    .social {
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+
+
+    .terms,
+    .contactInfo {
+        text-align: unset !important;
+    }
+
+    .site-header-top {
+       /* margin-top: 4px;*/
+    }
+
+    #masthead .primary-menu.off_canva_nav>* {
+        width: 100%;
+    }
+
+    .site-header-v2 .site-header-top {
+        margin-bottom: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+	.site-branding{
+		margin-bottom:-1.5%;
+	}
+	.site-header text-center site-header-v2{
+		/*top:-15px;*/
+	}
+}
