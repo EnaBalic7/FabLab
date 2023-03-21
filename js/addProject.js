@@ -13,6 +13,8 @@ const specialBadgeInput=document.querySelector('#special-badge-input');
 
 const addProjectDiv=document.querySelector('#addProject');
 
+
+
 let imageDataUrl;
 card.addEventListener('click', () => {
     popup.style.display = 'block';
@@ -39,14 +41,30 @@ fileInput.addEventListener('change', (event) => {
        imageDataUrl = reader.result;
     };
   });
-  
-  
+  const CreateElement=(tag,className)=>{
+    const element=document.createElement(tag);
+    element.classList.add(className);
+    return element;
+  };
+
+const CreateTag=(tags)=>{
+    const tileTags=CreateElement('div','tile-tagsProjects');
+    const tagsArray=tags.split(',');
+    tagsArray.forEach(tag=>{
+        const tileTagsDiv=CreateElement('div','tagProject');
+        tileTagsDiv.innerText=tag;
+        tileTags.appendChild(tileTagsDiv);
+    }
+    ); 
+    return tileTags;
+};
+
 submitBtn.addEventListener('click', () => {
+   const tag=CreateTag(tagsInput.value);
+   const tile=CreateElement('div','tile');
     if(!validateInputs()){
         return;
     };
-    let tile=document.createElement("div");
-    tile.classList.add("tile");
-    tile.innerHTML=' <div class="special-badge"> <div style="display: flex;"> <span> '+specialBadgeInput.value+' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"> <img src="'+imageDataUrl+'" width="100%" alt=""></div><div class="tile-body"> <a href="#" target="_blank"><h1> '+titleInput.value+' </h1>  </a> <div class="tile-tagsProjects"><div class="tagProject"> '+tagsInput.value+' </div><div class="tagProject"> '+tagsInput.value+' </div> </div></div></div><!--end of flip-inner --><div class="flip-card-backP"><h3>'+subTitleInput.value+' </h3><p> '+textInput.value+'</p></div></div>';
+    tile.innerHTML=' <div class="special-badge"> <div style="display: flex;"> <span> '+specialBadgeInput.value+' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"> <img src="'+imageDataUrl+'" width="100%" alt=""></div><div class="tile-body"> <a href="#" target="_blank"><h1> '+titleInput.value+' </h1>  </a> '+tag.outerHTML+' </div></div><!--end of flip-inner --><div class="flip-card-backP"><h3>'+subTitleInput.value+' </h3><p> '+textInput.value+'</p></div></div>';
     addProjectDiv.parentNode.insertBefore(tile,addProjectDiv);
 });

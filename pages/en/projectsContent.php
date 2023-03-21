@@ -505,7 +505,7 @@
                     <input id="subtitle-input" type="text" name="subtitle" placeholder="Your subtitle..">
                     <label for="description">Description</label>
                     <textarea id="text-input" name="description" placeholder="Write something.." style="height:200px"></textarea>
-                    <label for="tags">Tags</label>
+                    <label for="tags">Tags (tag1,tag2,tag3)</label>
                     <input type="text" id="tags-input" name="tags" placeholder="Your tags..">
                     <label for="category">special-badge</label>
                     <input id="special-badge-input" type="text" name="special-badge" placeholder="Your special-badge..">
