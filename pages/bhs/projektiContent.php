@@ -471,8 +471,40 @@
 
                 </div>
             </div>
-        </div>
 
+        </div>
+        <div class="tile" id="addProject">
+            
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-icon">
+                        <span class="plus-icon">+</span>
+                    </div>
+                    <h2 class="card-title">Add New Project</h2>
+                </div>
+            </div>
+
+        </div>
+        <!-- Ovdje pocinje popup forma -->
+        <div class="popup-container">
+            <div class="popup-content">
+                <h2>Popup Form</h2>
+                <form id="form-input">
+                    <label for="file-upload">Select a JPEG, PNG, or GIF file:</label>
+                    <input type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Your title..">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>
+                    <label for="tags">Tags</label>
+                    <input type="text" id="tags" name="tags" placeholder="Your tags..">
+        
+                </form>
+                <button type="submit">Submit</button>
+                <button type="button" class="close-popup">Close</button>
+            </div>
+        </div>
 
     </div>
 </div>

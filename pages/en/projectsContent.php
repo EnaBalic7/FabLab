@@ -26,9 +26,9 @@
                 <div class="flip-card-frontP">
                     <div class="tile-image"> <img src="../../slike/proj/Masinci%20-%20praksa.png" width="100%" alt="">
                     </div>
-                    <div class="tile-body"> 
-                            <h3>Maker Movement Establishing in BiH and Strengthening in the Visegrad Region </h3>
-                        
+                    <div class="tile-body">
+                        <h3>Maker Movement Establishing in BiH and Strengthening in the Visegrad Region </h3>
+
                         <div class="tile-tagsProjects">
                             <div class="tagProject"> Maker Movement </div>
                             <div class="tagProject"> Distributed Design </div>
@@ -37,17 +37,19 @@
                 </div>
                 <!--end of flip-inner -->
                 <div class="flip-card-backP txtChangeSmaller">
-               
-                         <h6>Maker Movement Establishing in BiH and Strengthening in the Visegrad Region</h6> 
+
+                    <h6>Maker Movement Establishing in BiH and Strengthening in the Visegrad Region</h6>
                     <p> The Project will establish a maker movement in BiH and foster strentenigh in Visegrad region.
                         Thee new partnership among FabLabs from Czech Republic, Hungary, Poland and Slovakia and BiH
                         will support sharing know-how, ideas and good practices. Partnering with other makers and
                         businesses, FabLabs will, through the maker movement, encourage science popularization, even in
                         hard-to-reach communities.
                     </p>
-					   <div class="tile-tagsProjects">
+                    <div class="tile-tagsProjects">
                         <div class="tagProject dugmence mob" style="background-color:white;color:black"> <a
-                                href="https://www.facebook.com/FabLabSarajevo/videos/606809733622872" target="_blank">Read more</a></div></div>
+                                href="https://www.facebook.com/FabLabSarajevo/videos/606809733622872"
+                                target="_blank">Read more</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,8 +65,8 @@
                     <div class="tile-image"> <img src="../../slike/proj/3D%20print%20i%20kultura.png" width="100%"
                             alt="">
                     </div>
-                    <div class="tile-body"> 
-                            <h3>3D printing meets culture: “Past Meets Future”</h3>
+                    <div class="tile-body">
+                        <h3>3D printing meets culture: “Past Meets Future”</h3>
                         <div class="tile-tagsProjects">
                             <div class="tagProject"> Local </div>
                             <div class="tagProject"> Culture </div>
@@ -77,9 +79,11 @@
                     <p> Aim of the projects is to determine capacity, survey current situation, display current
                         technology solutions and create feasibility study for Sarajevo museums and institutes of
                         culture.. </p>
-					  <div class="tile-tagsProjects">
+                    <div class="tile-tagsProjects">
                         <div class="tagProject dugmence mob" style="background-color:white;color:black"> <a
-                                href="https://mks.ks.gov.ba/aktuelno/obavjestenja/spisak-odobrenih-sredstava-iz-oblasti-kulture-0" target="_blank">Read more</a></div></div>
+                                href="https://mks.ks.gov.ba/aktuelno/obavjestenja/spisak-odobrenih-sredstava-iz-oblasti-kulture-0"
+                                target="_blank">Read more</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,8 +101,8 @@
                             alt="">
                     </div>
                     <div class="tile-body">
-                            <h3>Optimization and usage of 3D technology in medicine and health care - learn on
-                                experience </h3>
+                        <h3>Optimization and usage of 3D technology in medicine and health care - learn on
+                            experience </h3>
                         <div class="tile-tagsProjects">
                             <div class="tagProject"> International </div>
                             <div class="tagProject"> Collaboration </div>
@@ -112,9 +116,11 @@
                     <p> CEI funded project with aim to develop and strengthen the competences related to 3D technology
                         in medicine and health care. Participants: University of Zenica, University of Pavia,
                         Politecnico of Torino and FabLab BiH </p>
-				 <div class="tile-tagsProjects">
+                    <div class="tile-tagsProjects">
                         <div class="tagProject dugmence mob" style="background-color:white;color:black"> <a
-                                href="http://www.mef.ues.rs.ba/poziv-za-ucesce-u-radionicama-u-sklopu-projekta-optimization-and-usage-of-3d-technology-in-medicine-and-health-care-learn-on-experience/?script=lat" target="_blank">Read more</a></div></div>
+                                href="http://www.mef.ues.rs.ba/poziv-za-ucesce-u-radionicama-u-sklopu-projekta-optimization-and-usage-of-3d-technology-in-medicine-and-health-care-learn-on-experience/?script=lat"
+                                target="_blank">Read more</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,9 +135,9 @@
                 <div class="flip-card-frontP">
                     <div class="tile-image"> <img src="../../slike/proj/Trening%20pharma.png" width="100%" alt="">
                     </div>
-                    <div class="tile-body"> 
-                            <h3>AM Training for University </h3>
-                                      
+                    <div class="tile-body">
+                        <h3>AM Training for University </h3>
+
                         <div class="tile-tagsProjects">
                             <div class="tagProject"> STEM </div>
                             <div class="tagProject"> FabXUni </div>
@@ -146,9 +152,11 @@
                         industry. 3D drug printing may become the biggest technological leap in the pharmaceutical
                         segment, and according to the optimistic forecasts, it will soon be available in BiH as well.
                     </p>
-					  <div class="tile-tagsProjects">
+                    <div class="tile-tagsProjects">
                         <div class="tagProject dugmence mob" style="background-color:white;color:black"> <a
-                                href="https://www.facebook.com/FabLabSarajevo/posts/538988210875117" target="_blank">Read more</a></div></div>
+                                href="https://www.facebook.com/FabLabSarajevo/posts/538988210875117"
+                                target="_blank">Read more</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,8 +171,8 @@
                 <div class="flip-card-frontP">
                     <div class="tile-image"> <img src="../../slike/proj/Masinci%20-%20praksa.png" width="100%" alt="">
                     </div>
-                    <div class="tile-body"> 
-                            <h3>Internship - Faculty of Mechanical Engineering </h3>
+                    <div class="tile-body">
+                        <h3>Internship - Faculty of Mechanical Engineering </h3>
                         <div class="tile-tagsProjects">
                             <div class="tagProject"> FabXUni </div>
                             <div class="tagProject"> Local </div>
@@ -180,9 +188,11 @@
                         for 10 students of III and IV year of study. During the internship, students worked on the
                         various creative 3D printing projects: - Ultrasonic toothbrush cleaner - Hydrodynamic
                         transformer - Special purpose clamping tool - Lightweight frame for drones. </p>
-					 <div class="tile-tagsProjects">
+                    <div class="tile-tagsProjects">
                         <div class="tagProject dugmence mob" style="background-color:white;color:black"> <a
-                                href="https://www.facebook.com/FabLabSarajevo/videos/606809733622872/" target="_blank">Read more</a></div></div>
+                                href="https://www.facebook.com/FabLabSarajevo/videos/606809733622872/"
+                                target="_blank">Read more</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -220,9 +230,11 @@
                         Sarajevo, the Faculty of Pharmacy in Belgrade and Hemofarm company. The aim of the project was
                         to present new interdislinary field, its applications, but also the challenges through a two-day
                         training and confrence. </p>
-					  <div class="tile-tagsProjects">
+                    <div class="tile-tagsProjects">
                         <div class="tagProject dugmence mob" style="background-color:white;color:black"> <a
-                                href="https://www.ffsa.unsa.ba/post/zavr%C5%A1ena-radionica-3d-printanje-u-farmaciji" target="_blank">Read more</a></div></div>
+                                href="https://www.ffsa.unsa.ba/post/zavr%C5%A1ena-radionica-3d-printanje-u-farmaciji"
+                                target="_blank">Read more</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,20 +262,21 @@
                 </div>
                 <!--end of flip-inner -->
                 <div class="flip-card-backP">
-                  
-                        <h3>Women in 3D printing</h3>
-                    
+
+                    <h3>Women in 3D printing</h3>
+
                     <p>
                         To make as many women become interested and involved in the field of additive production, a
                         branch of the global network <a href="https://womenin3dprinting.com/about-us/">'Women in 3D
                             Printing'</a> has been established in Sarajevo.
                         <br>We organize regular events with guest lecturers and leading experts from around the world.
                         <br>You can find out information about new events via our website or social networks.
-                    
+
                     </p>
-					   <div class="tile-tagsProjects">
+                    <div class="tile-tagsProjects">
                         <div class="tagProject dugmence mob" style="background-color:white;color:black"> <a
-                                href="https://womenin3dprinting.com/about-us/" target="_blank">Read more</a></div></div>
+                                href="https://womenin3dprinting.com/about-us/" target="_blank">Read more</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -278,8 +291,8 @@
                 <div class="flip-card-frontP">
                     <div class="tile-image"> <img src="../../slike/proj/3D%20skener.png" width="100%" alt="">
                     </div>
-                    <div class="tile-body"> 
-                            <h3>Improving STEM Education with 3D Scanning</h3>
+                    <div class="tile-body">
+                        <h3>Improving STEM Education with 3D Scanning</h3>
                         <div class="tile-tagsProjects">
                             <div class="tagProject"> Local </div>
                             <div class="tagProject"> STEM </div>
@@ -294,9 +307,11 @@
                         of FabLab through the procurement of 3D scanners with the aim of establishing inclusive STEM
                         education and training of young people to work on additive technologies, including project
                         equipment. </p>
-					 <div class="tile-tagsProjects">
+                    <div class="tile-tagsProjects">
                         <div class="tagProject dugmence mob" style="background-color:white;color:black"> <a
-                                href="https://www.facebook.com/FabLabSarajevo/posts/439416167498989?__tn__=-R" target="_blank">Read more</a></div></div>
+                                href="https://www.facebook.com/FabLabSarajevo/posts/439416167498989?__tn__=-R"
+                                target="_blank">Read more</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -328,7 +343,7 @@
                         people worldwide. Technological innovations together with IPR best practices present great
                         opportunities in promoting healthy fish populations, feeding billions of people, and at the same
                         time adapting to the impacts of climate changes. Patented. </p>
-			
+
                 </div>
             </div>
         </div>
@@ -360,7 +375,7 @@
                         educational tool for chemistry, biology, or physics of light. FabLab Sarajevo has developed a
                         fiber-coupled spectrometer and a cuvette holder that make the conduction of experiments easy and
                         repeatable. </p>
-			
+
                 </div>
             </div>
         </div>
@@ -424,7 +439,7 @@
                     <p> We have assisted in fabrication, design changes and final design of the custom orthopedic active
                         medical instrument. Product is patent pending and further detail will be available once product
                         is patented. </p>
-				
+
                 </div>
             </div>
         </div>
@@ -459,10 +474,49 @@
                         fabrication within financial reach of SMEs and startups, or even for
                         full-time jobers trying to explore an alternative career, significantly
                         simplifying the process of prototype or product development. </p>
-					 
+
                 </div>
             </div>
         </div>
+        <!-- Ovdje pocinje add projekt -->
+        <div class="tile" id="addProject">
+            
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-icon">
+                        <span class="plus-icon">+</span>
+                    </div>
+                    <h2 class="card-title">Add New Project</h2>
+                </div>
+            </div>
+
+        </div>
+        <!-- Ovdje pocinje popup forma -->
+        <div class="popup-container">
+            <div class="popup-content">
+                <h2>Popup Form</h2>
+                <form id="form-input">
+                    <label for="file-upload">Select a JPEG, PNG, or GIF file:</label>
+                    <input  type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
+
+                    <label for="title">Title</label>
+                    <input id="title-input" type="text" name="title" placeholder="Your title..">
+                    <label for="category">Subtitle</label>
+                    <input id="subtitle-input" type="text" name="subtitle" placeholder="Your subtitle..">
+                    <label for="description">Description</label>
+                    <textarea id="text-input" name="description" placeholder="Write something.." style="height:200px"></textarea>
+                    <label for="tags">Tags</label>
+                    <input type="text" id="tags-input" name="tags" placeholder="Your tags..">
+                    <label for="category">special-badge</label>
+                    <input id="special-badge-input" type="text" name="special-badge" placeholder="Your special-badge..">
+    
+                </form>
+                <button type="submit" class="submitBtn">Submit</button>
+                <button type="button" class="closeBtn">Close</button>
+            </div>
+        </div>
+
+
 
 
     </div>
