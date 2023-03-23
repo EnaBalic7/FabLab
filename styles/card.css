@@ -1,77 +1,127 @@
 .card {
-    background-color: #fff;
-    border: solid black 1px;
-    border-radius: 5px;
+    background-color: #ffffffe5; 
+    border-radius: 2px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 100%;
 }
-
 .title {
     border: solid black 1px;
 }
-
 .tile:hover .card {
     border: #ccc 1px solid;
 }
-
 .card:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-
 }
-
 .card-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60px;
     height: 60px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
+    border: 2px solid  #878787;
+    border-radius: 60%;
 }
-
 .plus-icon {
     font-size: 32px;
-    color: #ccc;
+    color: #878787d7;
 }
-
 .card-title {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
+    color: #878787;
 }
-
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2;
+    width: 70%;
+    max-width: 450px;
+    max-height: 90%;
+    overflow-y: auto;
+    margin-top: 10px;
+    background-color: rgba(237, 237, 237, 0.97) !important;
+}
 .popup-container {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
     z-index: 1;
-}
-
-.popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    z-index: 2;
-}
-
+    margin-top: 20px;
+    background-color: #12121280;
+  }    
 #form-input {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
+label {
+    margin-bottom: 5px;
+}
+input[type="text"], textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+}
+.submitBtn, .closeBtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+.submitBtn {
+    background-color: #3dc23d;
+}
+.closeBtn {
+    background-color: #cf3c37;
+}
+   .popup-buttons {
+    text-align: center;
+  }
+input[type="file"] {
+    display: none;
+  }
+label[for="file-upload"] {
+    padding: 10px;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+
+
+
+
+  
+  
+  
+  

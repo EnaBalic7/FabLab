@@ -494,11 +494,11 @@
         <!-- Ovdje pocinje popup forma -->
         <div class="popup-container">
             <div class="popup-content">
-                <h2>Popup Form</h2>
+                <h3>Add New Project</h3>
                 <form id="form-input">
                     <label for="file-upload">Select a JPEG, PNG, or GIF file:</label>
                     <input  type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
-
+                 
                     <label for="title">Title</label>
                     <input id="title-input" type="text" name="title" placeholder="Your title..">
                     <label for="category">Subtitle</label>
@@ -507,17 +507,15 @@
                     <textarea id="text-input" name="description" placeholder="Write something.." style="height:200px"></textarea>
                     <label for="tags">Tags (tag1,tag2,tag3)</label>
                     <input type="text" id="tags-input" name="tags" placeholder="Your tags..">
-                    <label for="category">special-badge</label>
+                    <label for="category">Special-badge</label>
                     <input id="special-badge-input" type="text" name="special-badge" placeholder="Your special-badge..">
     
                 </form>
-                <button type="submit" class="submitBtn">Submit</button>
-                <button type="button" class="closeBtn">Close</button>
+                <div class="popup-buttons">
+                      <button type="submit" class="submitBtn">Submit</button>
+                      <button type="button" class="closeBtn">Close</button>
+                </div>
             </div>
         </div>
-
-
-
-
     </div>
 </div>
