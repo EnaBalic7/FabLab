@@ -27,6 +27,7 @@ function validateInputs() {
     return true;
 }
 
+
 fileInput.addEventListener('change', (event) => {
     const file = event.target.files[0];
 
@@ -79,6 +80,7 @@ let editProject = (tile) => {
 addProjectDiv.onclick = () => {
     popup.style.display = 'block';
     submitBtn.innerText = 'Add project';
+    document.querySelector(".popup-content").children[0].innerText = "Add New Project";
     submitBtn.onclick = () => {
         addProject();
     }
@@ -94,6 +96,8 @@ for (const tile in tiles) {
         let element = tiles[tile];    
         element.onclick = () => {
             popup.style.display = 'block';
+            document.querySelector(".popup-content").children[0].innerText = "Edit project";
+            submitBtn.innerText = 'Edit project';
             submitBtn.onclick = () => {
                 editProject(element);
             }
