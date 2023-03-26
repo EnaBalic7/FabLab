@@ -4,6 +4,7 @@ const popup = document.querySelector('.popup-container');
 const closeBtn = document.querySelector('.closeBtn');
 const submitBtn = document.querySelector('.submitBtn');
 
+
 const fileInput = document.querySelector('#file-upload');
 const titleInput = document.querySelector('#title-input');
 const subTitleInput = document.querySelector('#subtitle-input');
@@ -15,14 +16,7 @@ const addProjectDiv = document.querySelector('#addProject');
 
 let imageDataUrl;
 
-//kontrola popupa 
-addProjectDiv.addEventListener('click', () => {
-    popup.style.display = 'block';
-})
-closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-});
-//kontrola popupa
+
 
 function validateInputs() {
     if (titleInput.value === "" || textInput.value === "" || tagsInput.value === "" || imageDataUrl === undefined || specialBadgeInput.value === "" || subTitleInput.value === "") {
@@ -62,38 +56,57 @@ const CreateTag = (tags) => {
 let addProject = () => {
     const tag = CreateTag(tagsInput.value);
     const tile = CreateElement('div', 'tile');
+    
     if (!validateInputs()) {
         return;
     };
     //innerHTML privremena pohrana
     tile.innerHTML = ' <div class="special-badge"> <div style="display: flex;"> <span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"> <img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"> <a href="#" target="_blank"><h1> ' + titleInput.value + ' </h1>  </a> ' + tag.outerHTML + ' </div></div><!--end of flip-inner --><div class="flip-card-backP"><h3>' + subTitleInput.value + ' </h3><p> ' + textInput.value + '</p></div></div>';
-
     addProjectDiv.parentNode.insertBefore(tile, addProjectDiv);
-
+    popup.style.display = 'none';
 }
+
 let editProject = (tile) => {
     const tag = CreateTag(tagsInput.value);
     if (!validateInputs()) {
         return;
     };
     //innerHTML privremena pohrana
-    tile.innerHTML = ' <div class="special-badge"> <div style="display: flex;"> <span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"> <img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"> <a href="#" target="_blank"><h1> ' + titleInput.value + ' </h1>  </a> ' + tag.outerHTML + ' </div></div><!--end of flip-inner --><div class="flip-card-backP"><h3>' + subTitleInput.value + ' </h3><p> ' + textInput.value + '</p></div></div>';
+    tile.innerHTML = ' <div class="special-badge"> <div style="display: flex;"> <span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"> <img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"> <a href="#" target="_blank"><h1> ' + titleInput.value + ' </h1>  </a> ' + tag.outerHTML + ' </div></div><!--end of flip-inner --><div class="flip-card-backP"><h3>' + subTitleInput.value + ' </h3><p> ' + textInput.value + '</p></div></div>'; 
+    popup.style.display = 'none';
+}
+//kontrola popupa 
+addProjectDiv.onclick = () => {
+    popup.style.display = 'block';
+    submitBtn.innerText = 'Add project';
+    submitBtn.onclick = () => {
+        addProject();
+    }
+}
+closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+//kontrola popupa
+
+//editovanje projekta
+for (const tile in tiles) {
+    if (Object.hasOwnProperty.call(tiles, tile)) {
+        let element = tiles[tile];    
+        element.onclick = () => {
+            popup.style.display = 'block';
+            submitBtn.onclick = () => {
+                editProject(element);
+            }
+        }
+    }
 }
 
-tiles.forEach(tile => {
-    tile.addEventListener('click', () => {
 
-        if (tile === addProjectDiv) {
-            submitBtn.addEventListener('click', () => {
-                addProject();
-            });
-        }
-        else {
-            popup.style.display = 'block';
-            submitBtn.addEventListener('click', () => {
-                editProject(tile);
-            });
-        }
-    })
 
-});
+
+
+
+
+
+
+

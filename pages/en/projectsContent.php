@@ -445,7 +445,7 @@
         </div>
 
 
-        <div class="tile  ">
+        <div class="tile  " >
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -479,7 +479,7 @@
             </div>
         </div>
         <!-- Ovdje pocinje add projekt -->
-        <div class="tile" id="addProject">
+        <div  id="addProject">
             
             <div class="card">
                 <div class="card-body">
@@ -492,7 +492,7 @@
 
         </div>
         <!-- Ovdje pocinje popup forma -->
-        <div class="popup-container">
+        <div class="popup-container" >
             <div class="popup-content">
                 <h3>Add New Project</h3>
                 <form id="form-input">
@@ -513,9 +513,11 @@
                 </form>
                 <div class="popup-buttons">
                       <button type="submit" class="submitBtn">Submit</button>
+                    
                       <button type="button" class="closeBtn">Close</button>
                 </div>
             </div>
         </div>
+        
     </div>
 </div>

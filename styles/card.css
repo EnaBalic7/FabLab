@@ -116,6 +116,18 @@ label[for="file-upload"] {
     cursor: pointer;
     display: inline-block;
   }
+  #addProject {
+      width: 31%;
+      border: 1px solid black;
+      position: relative;
+      margin-top: 20px;
+      perspective: 1000px;
+      height: 570px;
+  }
+    #addProject:hover {
+        transform: scale(1.05);
+        border:1px solid gray;
+    }
 
 
 
