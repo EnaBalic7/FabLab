@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../styles/w3.css">
     <link rel="stylesheet" href="../../styles/drugi.css">
     <link rel="stylesheet" href="../../styles/poppins.css">
+    <link rel="stylesheet" href="../../styles/card.css">
     
     <script src="../../js/fotoramaMin.js"></script>
     <script src="../../js/script.js"></script>

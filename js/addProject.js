@@ -11,10 +11,23 @@ const subTitleInput = document.querySelector('#subtitle-input');
 const textInput = document.querySelector('#text-input');
 const tagsInput = document.querySelector('#tags-input');
 const specialBadgeInput = document.querySelector('#special-badge-input');
+const imagePreview = document.querySelector('.imagePreview');
 
 const addProjectDiv = document.querySelector('#addProject');
 
 let imageDataUrl;
+
+function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup) {
+    fileInput.value = "";
+    titleInput.value = "";
+    textInput.value = "";
+    tagsInput.value = "";
+    specialBadgeInput.value = "";
+    subTitleInput.value = "";
+    imagePreview.style.display = 'none';
+    imagePreview.style.backgroundImage = "";
+    popup.style.display = 'none';
+}
 
 
 
@@ -33,10 +46,12 @@ fileInput.addEventListener('change', (event) => {
 
     const reader = new FileReader();
     reader.readAsDataURL(file);
-
+    
     reader.onload = () => {
         imageDataUrl = reader.result;
-    };
+        imagePreview.style.display = 'block';
+        imagePreview.style.backgroundImage = `url(${imageDataUrl})`;
+    }; 
 });
 const CreateElement = (tag, className) => {
     const element = document.createElement(tag);
@@ -63,8 +78,8 @@ let addProject = () => {
     };
     //innerHTML privremena pohrana
     tile.innerHTML = ' <div class="special-badge"> <div style="display: flex;"> <span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"> <img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"> <a href="#" target="_blank"><h1> ' + titleInput.value + ' </h1>  </a> ' + tag.outerHTML + ' </div></div><!--end of flip-inner --><div class="flip-card-backP"><h3>' + subTitleInput.value + ' </h3><p> ' + textInput.value + '</p></div></div>';
-    addProjectDiv.parentNode.insertBefore(tile, addProjectDiv);
-    popup.style.display = 'none';
+    addProjectDiv.after(tile);
+    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
 }
 
 let editProject = (tile) => {
@@ -74,7 +89,8 @@ let editProject = (tile) => {
     };
     //innerHTML privremena pohrana
     tile.innerHTML = ' <div class="special-badge"> <div style="display: flex;"> <span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"> <img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"> <a href="#" target="_blank"><h1> ' + titleInput.value + ' </h1>  </a> ' + tag.outerHTML + ' </div></div><!--end of flip-inner --><div class="flip-card-backP"><h3>' + subTitleInput.value + ' </h3><p> ' + textInput.value + '</p></div></div>'; 
-    popup.style.display = 'none';
+    
+    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
 }
 //kontrola popupa 
 addProjectDiv.onclick = () => {
@@ -86,7 +102,8 @@ addProjectDiv.onclick = () => {
     }
 }
 closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
+    
+    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
 });
 //kontrola popupa
 

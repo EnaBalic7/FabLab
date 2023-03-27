@@ -14,7 +14,18 @@
 </div>
 <div class="row">
     <div class="tiles-wrapper">
+    <div  id="addProject">
+            
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-icon">
+                        <span class="plus-icon">+</span>
+                    </div>
+                    <h2 class="card-title">Dodaj novi projekat</h2>
+                </div>
+            </div>
 
+        </div>
 
         <div class="tile   makermovement">
             <!--ovo je flip-card -->
@@ -473,38 +484,33 @@
             </div>
 
         </div>
-        <div class="tile" id="addProject">
-            
-
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-icon">
-                        <span class="plus-icon">+</span>
-                    </div>
-                    <h2 class="card-title">Add New Project</h2>
+     
+        <!-- Ovdje pocinje popup forma -->
+        <div class="popup-container" >
+            <div class="popup-content">
+                <h3>Add New Project</h3>
+                <form id="form-input">
+                    <label for="file-upload">Odaberi  JPEG, PNG, ili GIF file:</label>
+                    <input  type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
+                    <div class='imagePreview' ></div>
+                    <label for="title">Naslov</label>
+                    <input id="title-input" type="text" name="title" placeholder="Tvoj naslov..">
+                    <label for="category">Podnaslov</label>
+                    <input id="subtitle-input" type="text" name="subtitle" placeholder="Tvoj podnaslov..">
+                    <label for="description">Opis</label>
+                    <textarea id="text-input" name="description" placeholder="Napiši nešto.." style="height:200px"></textarea>
+                    <label for="tags">Tagovi (tag1,tag2,tag3)</label>
+                    <input type="text" id="tags-input" name="tags" placeholder="Tvoji tagovi..">
+                    <label for="category">Status projekta</label>
+                    <input id="special-badge-input" type="text" name="special-badge" placeholder="Tvoj status projekta..">
+    
+                </form>
+                <div class="popup-buttons">
+                      <button type="submit" class="submitBtn">Submit</button>
+                    
+                      <button type="button" class="closeBtn">Close</button>
                 </div>
             </div>
-
-        </div>
-        <!-- Ovdje pocinje popup forma -->
-        <div class="popup-container">
-            <div class="popup-content">
-                <h2>Popup Form</h2>
-                <form id="form-input">
-                    <label for="file-upload">Select a JPEG, PNG, or GIF file:</label>
-                    <input type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
-                    <label for="title">Title</label>
-                    <input type="text" id="title" name="title" placeholder="Your title..">
-                    <label for="description">Description</label>
-                    <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>
-                    <label for="tags">Tags</label>
-                    <input type="text" id="tags" name="tags" placeholder="Your tags..">
-        
-                </form>
-                <button type="submit">Submit</button>
-                <button type="button" class="close-popup">Close</button>
-            </div>
-        </div>
 
     </div>
 </div>
