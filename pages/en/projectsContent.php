@@ -12,6 +12,24 @@
         <p></p>
     </div>
 </div>
+<div class="wrapper"> 
+            <div id="buttons">
+                <button class="btn active" onclick="filterSelection('all')"> All</button>
+                <button class="btn" onclick="filterSelection('in-progress')"> In progress</button>
+                <button class="btn" onclick="filterSelection('0')"> 2020</button>
+                <button class="btn" onclick="filterSelection('1')"> 2021</button>
+                <button class="btn" onclick="filterSelection('2')"> 2022</button>
+                <button class="btn" onclick="filterSelection('3')"> 2023</button>
+                <button class="btn" onclick="filterSelection('international')"> International</button>
+                <button class="btn" onclick="filterSelection('local')"> Local</button>
+                <button class="btn" onclick="filterSelection('IP')"> IP</button>
+                <button class="btn" onclick="filterSelection('prototyping')"> Prototyping</button>
+                <button class="btn" onclick="filterSelection('STEM')"> STEM</button>
+                <button class="btn" onclick="filterSelection('craft')"> Craft</button>
+                <button class="btn" onclick="filterSelection('makermovement')"> Maker Movement</button>
+            </div>
+</div> 
+
 <div class="row">
     <div class="tiles-wrapper">
         <div id="addProject">
@@ -26,8 +44,7 @@
             </div>
 
         </div>
-
-        <div class="tile   makermovement">
+        <div class="tile in-progress makermovement">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> IN PROGRESS </span>
@@ -65,7 +82,7 @@
             </div>
         </div>
 
-        <div class="tile ">
+        <div class="tile 1 local">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2021 </span>
@@ -99,7 +116,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile in-progress international">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> IN PROGRESS </span>
@@ -136,7 +153,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile 1 STEM">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2021 </span>
@@ -172,7 +189,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile 1 local">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2021 </span>
@@ -208,7 +225,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile 1 international">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2021 </span>
@@ -250,7 +267,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile in-progress international">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -292,7 +309,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile 0 local STEM">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2020 </span>
@@ -327,7 +344,7 @@
             </div>
         </div>
 
-        <div class="tile ">
+        <div class="tile in-progress IP prototyping">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -359,7 +376,7 @@
             </div>
         </div>
 
-        <div class="tile ">
+        <div class="tile in-progress IP prototyping">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -392,7 +409,7 @@
         </div>
 
 
-        <div class="tile  ">
+        <div class="tile in-progress IP prototyping">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -425,7 +442,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile in-progress IP prototyping">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -456,7 +473,7 @@
         </div>
 
 
-        <div class="tile  ">
+        <div class="tile in-progress craft">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -489,7 +506,7 @@
                 </div>
             </div>
         </div>
-
+</div>
 
         <!-- Ovdje pocinje popup forma -->
         <div class="popup-container">
@@ -523,6 +540,3 @@
                 </div>
             </div>
         </div>
-
-    </div>
-</div>
