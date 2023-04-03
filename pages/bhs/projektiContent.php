@@ -12,6 +12,26 @@
         <p></p>
     </div>
 </div>
+<div class="wrapper">
+  <div id="special-badge">
+  <button class="btn active" onclick="filterSelection('all')"> All</button>
+    <button class="btn" onclick="filterSelection('in-progress')"> In progress</button>
+    <button class="btn" onclick="filterSelection('0')"> 2020</button>
+    <button class="btn" onclick="filterSelection('1')"> 2021</button>
+    <button class="btn" onclick="filterSelection('2')"> 2022</button>
+    <button class="btn" onclick="filterSelection('3')"> 2023</button>
+    <button class="btn" onclick="filterSelection('Local')"> Local</button>
+    <button class="btn" onclick="filterSelection('Regional')"> Regional</button>
+    <button class="btn" onclick="filterSelection('EU')"> EU</button>
+    <button class="btn" onclick="filterSelection('International')">International</button>
+  </div>
+  <div id="tags">
+  <button id="all-btn" class="btn active" onclick="filterSelection('all')"> All projects</button>
+  <span class="separator"></span>
+  <!-- ovdje će se generirati ostali buttoni tagova -->
+</div>
+</div>
+
 <div class="row">
     <div class="tiles-wrapper">
     <div  id="addProject">
@@ -27,7 +47,7 @@
 
         </div>
 
-        <div class="tile   makermovement">
+        <div class="tile in-progress Maker-Movement Distributed-Design">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> IN PROGRESS </span>
@@ -41,8 +61,8 @@
                         <h3>Osnivanje makers pokreta u BiH i jačanje u regionu zemalja Višegradske grupe </h3>
 
                         <div class="tile-tagsProjects">
-                            <div class="tagProject"> Maker Movement </div>
-                            <div class="tagProject"> Distributed Design </div>
+                            <div class="tagProject"> Maker-Movement </div>
+                            <div class="tagProject"> Distributed-Design </div>
                         </div>
                     </div>
                 </div>
@@ -65,7 +85,7 @@
             </div>
         </div>
 
-        <div class="tile ">
+        <div class="tile 1 Local Culture">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2021 </span>
@@ -99,7 +119,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile in-progress International Collaboration ">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> IN PROGRESS </span>
@@ -134,7 +154,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile  1 STEM FabXUni">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2021 </span>
@@ -170,7 +190,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile  1 Local FabXUni">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2021 </span>
@@ -205,7 +225,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile  1 FabXUni International">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2021 </span>
@@ -247,7 +267,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile  in-progress International Empowerment">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -290,7 +310,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile  0 Local STEM">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> 2020 </span>
@@ -324,7 +344,7 @@
             </div>
         </div>
 
-        <div class="tile ">
+        <div class="tile in-progress Innovation IP Prototyping">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -356,7 +376,7 @@
             </div>
         </div>
 
-        <div class="tile ">
+        <div class="tile in-progress IP Prototyping">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -388,7 +408,7 @@
         </div>
 
 
-        <div class="tile  ">
+        <div class="tile in-progress IP Prototyping ">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -419,7 +439,7 @@
             </div>
         </div>
 
-        <div class="tile  ">
+        <div class="tile  in-progress IP Prototyping">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>
@@ -450,7 +470,7 @@
         </div>
 
 
-        <div class="tile  ">
+        <div class="tile  in-progress Craft Entrepreneurship">
             <!--ovo je flip-card -->
             <div class="special-badge">
                 <div style="display: flex;"> <span> In progress </span>

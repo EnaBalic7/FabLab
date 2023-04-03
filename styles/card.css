@@ -159,45 +159,79 @@ label[for="file-upload"] {
   background-repeat: no-repeat;
 }
 .wrapper {
-    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    margin-top: 50px;   
-}
-#buttons {
-    margin-left: 60px;
-}
-#buttons button:first-child {
-    background-color: rgb(60, 60, 60);
+    margin-top: 40px;
+    width: 75%;
+  }
+#special-badge {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+#special-badge .btn {
+    background-color: rgb(30, 119, 30);
     color: white;
   }
-#buttons button:first-child:hover {
-    background-color: rgb(97, 97, 97);
-  }
-#buttons button:nth-child(n+2):nth-child(-n+6) {
-    background-color:#BC412B;
+#special-badge .btn.btn.active {
+    background-color: rgb(46, 182, 46);
     color: white;
-  }
-#buttons button:nth-child(n+2):nth-child(-n+6):hover {
-    background-color: #ea5339;
   }
   
-#buttons button:nth-child(n+7) {
-    background-color:#26532B;
-    color: white;
+#special-badge .btn:nth-child(-n+6) {
+    background-color: rgb(38, 49, 150);
   }
-  #buttons button:nth-child(n+7):hover {
-    background-color: #36783d;
+#special-badge .btn:nth-child(-n+6).btn.active {
+    background-color: #206ab3;
   }
+#tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+#special-badge::after,
+#tags::after {
+    content: "";
+    width: 100%;
+    border-top: 1px solid #a2a2a2;
+    margin-top: 1em;
+ }
 .btn {
-    border: 1px solid #555555;
-    padding:0.5em 1.2em;
-    margin-top: 10px;
-    border-radius: 8px;
+    padding: 0.5em 1.2em;
+    margin: 10px;
+    border-radius: 5px;
     cursor: pointer;
-}
+    color: white;
+    border: none;
+  }
+#tags .btn {
+    background-color: #da1717;
+  }
+#tags .btn.active {
+    background-color: #ff3e3e;
+  }
 .tile {
     display: none;
-}   
+  }
 .show {
     display: block !important;
-}
+  }
+#all-btn {
+    background-color: #da1717 !important; 
+  }
+.separator {
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    margin: 0 10px;
+    background-color: #a2a2a2;
+  }
+  
+  
+  

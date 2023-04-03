@@ -122,44 +122,92 @@ for (const tile in tiles) {
     }
 }
 
-filterSelection('all')
+function filterSelection(inProgress, tag) {
+  var x = document.getElementsByClassName("tile");
+  for (var i = 0; i < x.length; i++) {
+    var showTile = true;
+    if (inProgress && !x[i].classList.contains(inProgress) && inProgress !== "all") {
+      showTile = false;
+    } 
+   if (tag && !x[i].classList.contains(tag) && tag !== "all") {
+     showTile = false;
+   }
+    if (showTile) {
+      x[i].classList.add("show");
+    } else {
+      x[i].classList.remove("show");
+    }
+  }
+} 
+// prikazi sve projekte 
+filterSelection("all", "");
 
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("tile");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    removeClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-  }
-}
-function addClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-function removeClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-var btnContainer = document.getElementById("buttons");
+var btnContainer = document.getElementById("special-badge");
 var btns = btnContainer.getElementsByClassName("btn");
+
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.querySelector("#special-badge .active");
+    if (current) {
+      current.classList.remove("active");
+    }
+    this.classList.add("active");
+    var specialBadgeSelected = document.querySelector("#special-badge .active");
+    var inProgress = specialBadgeSelected ? specialBadgeSelected.getAttribute("onclick").split("'")[1] : "";
+    var tagsSelected = document.querySelector("#tags .active");
+    var tag = tagsSelected ? tagsSelected.getAttribute("data-tag") : "";
+    filterSelection(inProgress, tag);
   });
-}  
+}
+
+var tagContainer = document.getElementById("tags");
+var tags = tagContainer.getElementsByClassName("btn");
+for (var i = 0; i < tags.length; i++) {
+  tags[i].addEventListener("click", function() {
+    var tag = this.getAttribute("data-tag");
+    filterSelection(inProgress, tag);
+  });
+}
+
+// objekat koji će brojati koliko puta se pojavljuje svaki tag
+var tagCounts = {};
+
+var tilea = document.querySelectorAll('.tile');
+for (var i = 0; i < tilea.length; i++) {
+  var tags = tilea[i].querySelectorAll('.tagProject:not(.dugmence)');
+  for (var j = 0; j < tags.length; j++) {
+    var tag = tags[j].innerHTML.trim();
+    if (tag !== "Local" && tag !== "International") {
+      if (tagCounts.hasOwnProperty(tag)) {
+        tagCounts[tag]++;
+      } else {
+        tagCounts[tag] = 1;
+      }
+    }
+  }
+}
+// sortiranje tagova po broju pojavljivanja
+var sortedTags = Object.keys(tagCounts).sort(function(a, b) {
+  return tagCounts[b] - tagCounts[a];
+});
+
+var tagWrapper = document.getElementById('tags');
+for (var i = 0; i < 5; i++) {
+  var tag = sortedTags[i];
+  var button = document.createElement('button');
+  button.className = 'btn';
+  button.textContent = tag + " (" + tagCounts[tag] + ")";
+  button.setAttribute("data-tag", tag);
+  button.addEventListener('click', function() {
+    var current = document.querySelector("#tags .active");
+    if (current) {
+      current.classList.remove("active");
+    }
+    this.classList.add("active");
+    var specialBadgeSelected = document.querySelector("#special-badge .active");
+    var inProgress = specialBadgeSelected ? specialBadgeSelected.getAttribute("onclick").split("'")[1] : "";
+    var tagSelected = this.getAttribute("data-tag");
+    filterSelection(inProgress, tagSelected);
+  });
+  tagWrapper.appendChild(button);
+}
