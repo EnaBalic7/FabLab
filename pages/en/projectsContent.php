@@ -11,25 +11,29 @@
         </p>
         <p></p>
     </div>
+
+    <button onclick="OpenLoginForm()">Sign in</button>
+    <button id="signOut" style="display:none;">Sign out</button>
+    <div id="UserInfo"></div>
 </div>
 <div class="wrapper">
-  <div id="special-badge">
-  <button class="btn active" onclick="filterSelection('all')"> All</button>
-    <button class="btn" onclick="filterSelection('in-progress')"> In progress</button>
-    <button class="btn" onclick="filterSelection('0')"> 2020</button>
-    <button class="btn" onclick="filterSelection('1')"> 2021</button>
-    <button class="btn" onclick="filterSelection('2')"> 2022</button>
-    <button class="btn" onclick="filterSelection('3')"> 2023</button>
-    <button class="btn" onclick="filterSelection('Local')"> Local</button>
-    <button class="btn" onclick="filterSelection('Regional')"> Regional</button>
-    <button class="btn" onclick="filterSelection('EU')"> EU</button>
-    <button class="btn" onclick="filterSelection('International')">International</button>
-  </div>
-  <div id="tags">
-  <button id="all-btn" class="btn active" onclick="filterSelection('all')"> All projects</button>
-  <span class="separator"></span>
-  <!-- ovdje će se generirati ostali buttoni tagova -->
-</div>
+    <div id="special-badge">
+        <button class="btn active" onclick="filterSelection('all')"> All</button>
+        <button class="btn" onclick="filterSelection('in-progress')"> In progress</button>
+        <button class="btn" onclick="filterSelection('0')"> 2020</button>
+        <button class="btn" onclick="filterSelection('1')"> 2021</button>
+        <button class="btn" onclick="filterSelection('2')"> 2022</button>
+        <button class="btn" onclick="filterSelection('3')"> 2023</button>
+        <button class="btn" onclick="filterSelection('Local')"> Local</button>
+        <button class="btn" onclick="filterSelection('Regional')"> Regional</button>
+        <button class="btn" onclick="filterSelection('EU')"> EU</button>
+        <button class="btn" onclick="filterSelection('International')">International</button>
+    </div>
+    <div id="tags">
+        <button id="all-btn" class="btn active" onclick="filterSelection('all')"> All projects</button>
+        <span class="separator"></span>
+        <!-- ovdje će se generirati ostali buttoni tagova -->
+    </div>
 </div>
 
 
@@ -509,37 +513,52 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
 
-        <!-- Ovdje pocinje popup forma -->
-        <div class="popup-container">
-            <div class="popup-content">
-                <h3>Add New Project</h3>
-                <form id="form-input">
-                    <!-- <label for="file-upload">Select a JPEG, PNG, or GIF file:</label>
+    <!-- Ovdje pocinje popup forma -->
+    <div class="popup-container">
+        <div class="popup-content">
+            <h3>Add New Project</h3>
+            <form id="form-input">
+                <!-- <label for="file-upload">Select a JPEG, PNG, or GIF file:</label>
                     <input type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif"> -->
-                    
-                    <label for="file-upload">Select a JPEG, PNG, or GIF file:</label> 
-                    <input type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
-                    <div class='imagePreview'  ></div>
-                    <label for="title">Title</label>
-                    <input id="title-input" type="text" name="title" placeholder="Your title..">
-                    <label for="category">Subtitle</label>
-                    <input id="subtitle-input" type="text" name="subtitle" placeholder="Your subtitle..">
-                    <label for="description">Description</label>
-                    <textarea id="text-input" name="description" placeholder="Write something.."
-                        style="height:200px"></textarea>
-                    <label for="tags">Tags (tag1,tag2,tag3)</label>
-                    <input type="text" id="tags-input" name="tags" placeholder="Your tags..">
-                    <label for="category">Project status</label>
-                    <input id="special-badge-input" type="text" name="special-badge"
-                        placeholder="Your project status..">
 
-                </form>
-                <div class="popup-buttons">
-                    <button type="submit" class="submitBtn">Submit</button>
+                <label for="file-upload">Select a JPEG, PNG, or GIF file:</label>
+                <input type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
+                <div class='imagePreview'></div>
+                <label for="title">Title</label>
+                <input id="title-input" type="text" name="title" placeholder="Your title..">
+                <label for="category">Subtitle</label>
+                <input id="subtitle-input" type="text" name="subtitle" placeholder="Your subtitle..">
+                <label for="description">Description</label>
+                <textarea id="text-input" name="description" placeholder="Write something.."
+                    style="height:200px"></textarea>
+                <label for="tags">Tags (tag1,tag2,tag3)</label>
+                <input type="text" id="tags-input" name="tags" placeholder="Your tags..">
+                <label for="category">Project status</label>
+                <input id="special-badge-input" type="text" name="special-badge" placeholder="Your project status..">
 
-                    <button type="button" class="closeBtn">Close</button>
-                </div>
+            </form>
+            <div class="popup-buttons">
+                <button type="submit" class="submitBtn">Submit</button>
+
+                <button type="button" class="closeBtn">Close</button>
             </div>
         </div>
+    </div>
+    <div class="popup-container" id="form-login">
+        <div class="popup-content">
+            <h3>Login</h3>
+            <form>
+                <label for="email">Email</label>
+                <input id="email-input" type="text" name="email" placeholder="Your email..">
+                <label for="password">Password</label>
+                <input id="password-input" type="password" name="password" placeholder="Your password..">
+            </form>
+            <div class="popup-buttons">
+                <button type="submit" class="submitLogin">Login</button>
+
+                <button type="button" class="closeLogin" onclick="CloseLoginForm()">Close</button>
+            </div>
+        </div>
+    </div>

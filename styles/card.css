@@ -144,6 +144,7 @@ label[for="file-upload"] {
     margin-top: 20px;
     perspective: 1000px;
     height: 570px;
+    display: none;
 }
 
 #addProject:hover {

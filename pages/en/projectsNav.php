@@ -5,6 +5,7 @@
     <meta name="author" content="FabLab - Sarajevo">
     <title>FabLab Sarajevo - Home To Fabulous FabLab in Sarajevo</title>
     <meta name="robots" content="noindex,nofollow">
+    <meta name="google-signin-client_id" content="532943031464-scqpb6lbolpis09cs1f2tei6j5hasscr.apps.googleusercontent.com">
     <link rel="icon" type="image/png" href="../../slike/fav.png">
     
     <link rel="stylesheet" href="../../styles/icons.css">
@@ -13,10 +14,16 @@
     <link rel="stylesheet" href="../../styles/poppins.css">
     <link rel="stylesheet" href="../../styles/card.css">
 
+  
     <script src="../../js/fotoramaMin.js"></script>
     <script src="../../js/script.js"></script>
     <script src="../../js/icons.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+   <script defer src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+   <script defer src="../../js/Varijable.js"></script>
+   <script defer src="../../js/Auth.js"></script>
     <script defer src="../../js/addProject.js"></script>
+
 
   <style>
 	 .dugmence {
@@ -76,6 +83,12 @@ src="https://www.facebook.com/tr?id=1158314620935416&ev=PageView&noscript=1"
 
 </head>
 
+<script>
+    function onSignIn(googleUser) {
+      alert("You are signed in");
+      
+    }
+</script>
 <!-- navigation -->
 <div class="navbar navbarProjects navPosition">
   <div class="nav-head">

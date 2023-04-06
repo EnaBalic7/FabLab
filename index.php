@@ -40,9 +40,11 @@ session_start();
 	//if(strpos($page,$lan)){
 		//$temp=$_GET['page']; echo $temp;}
 	if(in_array($file, $whitelist) && file_exists($file)){
+		
 	include($file);
 	} else {
 	echo "The site is not found!";
 	}
 ?> 
+
 

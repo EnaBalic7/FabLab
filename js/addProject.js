@@ -1,21 +1,3 @@
-let tiles = document.querySelectorAll('.tile');
-const popup = document.querySelector('.popup-container');
-
-const closeBtn = document.querySelector('.closeBtn');
-const submitBtn = document.querySelector('.submitBtn');
-
-
-const fileInput = document.querySelector('#file-upload');
-const titleInput = document.querySelector('#title-input');
-const subTitleInput = document.querySelector('#subtitle-input');
-const textInput = document.querySelector('#text-input');
-const tagsInput = document.querySelector('#tags-input');
-const specialBadgeInput = document.querySelector('#special-badge-input');
-const imagePreview = document.querySelector('.imagePreview');
-
-const addProjectDiv = document.querySelector('#addProject');
-let imageDataUrl;
-
 
 function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup) {
     fileInput.value = "";
@@ -28,8 +10,6 @@ function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeIn
     imagePreview.style.backgroundImage = "";
     popup.style.display = 'none';
 }
-
-
 
 function validateInputs() {
     if (titleInput.value === "" || textInput.value === "" || tagsInput.value === "" || imageDataUrl === undefined || specialBadgeInput.value === "" || subTitleInput.value === "") {
@@ -93,14 +73,48 @@ let editProject = (tile) => {
     ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
 }
 //kontrola popupa 
-addProjectDiv.onclick = () => {
-    popup.style.display = 'block';
-    submitBtn.innerText = 'Add project';
-    document.querySelector(".popup-content").children[0].innerText = "Add New Project";
-    submitBtn.onclick = () => {
-        addProject();
-    }
-}
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+      // User is signed in, enable add/edit project functionality
+
+      // Add project button
+      addProjectDiv.onclick = () => {
+          popup.style.display = 'block';
+          submitBtn.innerText = 'Add project';
+          document.querySelector(".popup-content").children[0].innerText = "Add New Project";
+          submitBtn.onclick = () => {
+              addProject();
+          }
+      }
+
+      // Edit project button
+      for (const tile in tiles) {
+          if (Object.hasOwnProperty.call(tiles, tile)) {
+              let element = tiles[tile];    
+              element.onclick = () => {
+                  popup.style.display = 'block';
+                  document.querySelector(".popup-content").children[0].innerText = "Edit project";
+                  submitBtn.innerText = 'Edit project';
+                  submitBtn.onclick = () => {
+                      editProject(element);
+                  }
+              }
+          }
+      }
+
+  } else {
+      // User is not signed in, disable add/edit project functionality
+      addProjectDiv.style.display = 'none';
+      for (const tile in tiles) {
+          if (Object.hasOwnProperty.call(tiles, tile)) {
+              let element = tiles[tile];    
+              element.onclick = () => {
+                  alert("You need to be logged in to edit a project");
+              }
+          }
+      }
+  }
+});
 closeBtn.addEventListener('click', () => {
     
     ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
@@ -108,19 +122,7 @@ closeBtn.addEventListener('click', () => {
 //kontrola popupa
 
 //editovanje projekta
-for (const tile in tiles) {
-    if (Object.hasOwnProperty.call(tiles, tile)) {
-        let element = tiles[tile];    
-        element.onclick = () => {
-            popup.style.display = 'block';
-            document.querySelector(".popup-content").children[0].innerText = "Edit project";
-            submitBtn.innerText = 'Edit project';
-            submitBtn.onclick = () => {
-                editProject(element);
-            }
-        }
-    }
-}
+
 
 function filterSelection(inProgress, tag) {
   var x = document.getElementsByClassName("tile");
