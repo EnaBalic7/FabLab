@@ -11,31 +11,34 @@
         </p>
         <p></p>
     </div>
+    <button onclick="OpenLoginForm()">Prijavite se</button>
+    <button id="signOut">Odjavite se</button>
+    <div id="UserInfo">Uspješno ste prijavljeni</div>
 </div>
 <div class="wrapper">
-  <div id="special-badge">
-  <button class="btn active" onclick="filterSelection('all')"> All</button>
-    <button class="btn" onclick="filterSelection('in-progress')"> In progress</button>
-    <button class="btn" onclick="filterSelection('0')"> 2020</button>
-    <button class="btn" onclick="filterSelection('1')"> 2021</button>
-    <button class="btn" onclick="filterSelection('2')"> 2022</button>
-    <button class="btn" onclick="filterSelection('3')"> 2023</button>
-    <button class="btn" onclick="filterSelection('Local')"> Local</button>
-    <button class="btn" onclick="filterSelection('Regional')"> Regional</button>
-    <button class="btn" onclick="filterSelection('EU')"> EU</button>
-    <button class="btn" onclick="filterSelection('International')">International</button>
-  </div>
-  <div id="tags">
-  <button id="all-btn" class="btn active" onclick="filterSelection('all')"> All projects</button>
-  <span class="separator"></span>
-  <!-- ovdje će se generirati ostali buttoni tagova -->
-</div>
+    <div id="special-badge">
+        <button class="btn active" onclick="filterSelection('all')"> All</button>
+        <button class="btn" onclick="filterSelection('in-progress')"> In progress</button>
+        <button class="btn" onclick="filterSelection('0')"> 2020</button>
+        <button class="btn" onclick="filterSelection('1')"> 2021</button>
+        <button class="btn" onclick="filterSelection('2')"> 2022</button>
+        <button class="btn" onclick="filterSelection('3')"> 2023</button>
+        <button class="btn" onclick="filterSelection('Local')"> Local</button>
+        <button class="btn" onclick="filterSelection('Regional')"> Regional</button>
+        <button class="btn" onclick="filterSelection('EU')"> EU</button>
+        <button class="btn" onclick="filterSelection('International')">International</button>
+    </div>
+    <div id="tags">
+        <button id="all-btn" class="btn active" onclick="filterSelection('all')"> All projects</button>
+        <span class="separator"></span>
+        <!-- ovdje će se generirati ostali buttoni tagova -->
+    </div>
 </div>
 
 <div class="row">
     <div class="tiles-wrapper">
-    <div  id="addProject">
-            
+        <div id="addProject">
+
             <div class="card">
                 <div class="card-body">
                     <div class="card-icon">
@@ -504,33 +507,59 @@
             </div>
 
         </div>
-     
-        <!-- Ovdje pocinje popup forma -->
-        <div class="popup-container" >
-            <div class="popup-content">
-                <h3>Add New Project</h3>
-                <form id="form-input">
-                    <label for="file-upload">Odaberi  JPEG, PNG, ili GIF file:</label>
-                    <input  type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
-                    <div class='imagePreview' ></div>
-                    <label for="title">Naslov</label>
-                    <input id="title-input" type="text" name="title" placeholder="Tvoj naslov..">
-                    <label for="category">Podnaslov</label>
-                    <input id="subtitle-input" type="text" name="subtitle" placeholder="Tvoj podnaslov..">
-                    <label for="description">Opis</label>
-                    <textarea id="text-input" name="description" placeholder="Napiši nešto.." style="height:200px"></textarea>
-                    <label for="tags">Tagovi (tag1,tag2,tag3)</label>
-                    <input type="text" id="tags-input" name="tags" placeholder="Tvoji tagovi..">
-                    <label for="category">Status projekta</label>
-                    <input id="special-badge-input" type="text" name="special-badge" placeholder="Tvoj status projekta..">
-    
-                </form>
-                <div class="popup-buttons">
-                      <button type="submit" class="submitBtn">Submit</button>
-                    
-                      <button type="button" class="closeBtn">Close</button>
-                </div>
-            </div>
 
+        <!-- Ovdje pocinje popup forma -->
+
+
+    </div>
+    <div class="popup-container">
+        <div class="popup-content">
+            <h3>Add New Project</h3>
+            <form id="form-input">
+                <label for="file-upload">Odaberi JPEG, PNG, ili GIF file:</label>
+                <input type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
+                <div class='imagePreview'></div>
+                <label for="title">Naslov</label>
+                <input id="title-input" type="text" name="title" placeholder="Tvoj naslov..">
+                <label for="category">Podnaslov</label>
+                <input id="subtitle-input" type="text" name="subtitle" placeholder="Tvoj podnaslov..">
+                <label for="description">Opis</label>
+                <textarea id="text-input" name="description" placeholder="Napiši nešto.."
+                    style="height:200px"></textarea>
+                <label for="category">Regioni</label>
+                <select id="category-select" name="category">
+                    <option value="Lokalno">Lokalno</option>
+                    <option value="Regionalno">Regionalno</option>
+                    <option value="EU">EU</option>
+                    <option value="Internationalno">Internationalno</option>
+                </select>
+                <label for="tags">Tagovi (tag1,tag2,tag3)</label>
+                <input type="text" id="tags-input" name="tags" placeholder="Tvoji tagovi..">
+                <label for="category">Status projekta</label>
+                <input id="special-badge-input" type="text" name="special-badge" placeholder="Tvoj status projekta..">
+
+            </form>
+            <div class="popup-buttons">
+                <button type="submit" class="submitBtn">Submit</button>
+
+                <button type="button" class="closeBtn">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-container" id="form-login">
+        <div class="popup-content">
+            <h3>Login</h3>
+            <form>
+                <label for="email">Email</label>
+                <input id="email-input" type="text" name="email" placeholder="Your email..">
+                <label for="password">Password</label>
+                <input id="password-input" type="password" name="password" placeholder="Your password..">
+            </form>
+            <div class="popup-buttons">
+                <button type="submit" class="submitLogin">Login</button>
+
+                <button type="button" class="closeLogin" onclick="CloseLoginForm()">Close</button>
+            </div>
+        </div>
     </div>
 </div>

@@ -10,7 +10,6 @@ function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeIn
     imagePreview.style.backgroundImage = "";
     popup.style.display = 'none';
 }
-
 function validateInputs() {
     if (titleInput.value === "" || textInput.value === "" || tagsInput.value === "" || imageDataUrl === undefined || specialBadgeInput.value === "" || subTitleInput.value === "") {
 
@@ -19,20 +18,6 @@ function validateInputs() {
     }
     return true;
 }
-
-
-fileInput.addEventListener('change', (event) => {
-    const file = event.target.files[0];
-
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    
-    reader.onload = () => {
-        imageDataUrl = reader.result;
-        imagePreview.style.display = 'block';
-        imagePreview.style.backgroundImage = `url(${imageDataUrl})`;
-    }; 
-});
 const CreateElement = (tag, className) => {
     const element = document.createElement(tag);
     element.classList.add(className);
@@ -42,6 +27,11 @@ const CreateElement = (tag, className) => {
 const CreateTag = (tags) => {
     const tileTags = CreateElement('div', 'tile-tagsProjects');
     const tagsArray = tags.split(',');
+    //region tag
+    const regionTag=CreateElement('div','tagProject');
+    regionTag.innerText=selectedCategory;
+    tileTags.appendChild(regionTag);
+    //end region tag
     tagsArray.forEach(tag => {
         const tileTagsDiv = CreateElement('div', 'tagProject');
         tileTagsDiv.innerText = tag;
@@ -76,7 +66,7 @@ let editProject = (tile) => {
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-      // User is signed in, enable add/edit project functionality
+      
       userInfo.style.display = "block";
       // Add project button
       addProjectDiv.onclick = () => {
@@ -104,7 +94,7 @@ firebase.auth().onAuthStateChanged((user) => {
       }
 
   } else if(!user) {
-      // User is not signed in, disable add/edit project functionality
+      
       userInfo.style.display = "none";
       addProjectDiv.style.display = 'none';
       for (const tile in tiles) {
@@ -118,13 +108,14 @@ firebase.auth().onAuthStateChanged((user) => {
   }
   
 });
+
+// Close popup
 closeBtn.addEventListener('click', () => {
-    
     ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
 });
-//kontrola popupa
 
-//editovanje projekta
+
+
 
 
 function filterSelection(inProgress, tag) {

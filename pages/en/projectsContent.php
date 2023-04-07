@@ -13,7 +13,7 @@
     </div>
 
     <button onclick="OpenLoginForm()">Sign in</button>
-    <button id="signOut" >Sign out</button>
+    <button id="signOut">Sign out</button>
     <div id="UserInfo">You are signed in</div>
 </div>
 <div class="wrapper">
@@ -533,7 +533,7 @@
                 <label for="description">Description</label>
                 <textarea id="text-input" name="description" placeholder="Write something.."
                     style="height:200px"></textarea>
-                <label for="category">Category</label>
+                <label for="category">Regions</label>
                 <select id="category-select" name="category">
                     <option value="Local">Local</option>
                     <option value="Regional">Regional</option>
@@ -569,3 +569,4 @@
             </div>
         </div>
     </div>
+</div>
