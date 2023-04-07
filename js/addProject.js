@@ -73,10 +73,11 @@ let editProject = (tile) => {
     ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
 }
 //kontrola popupa 
+
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
       // User is signed in, enable add/edit project functionality
-
+      userInfo.style.display = "block";
       // Add project button
       addProjectDiv.onclick = () => {
           popup.style.display = 'block';
@@ -102,8 +103,9 @@ firebase.auth().onAuthStateChanged((user) => {
           }
       }
 
-  } else {
+  } else if(!user) {
       // User is not signed in, disable add/edit project functionality
+      userInfo.style.display = "none";
       addProjectDiv.style.display = 'none';
       for (const tile in tiles) {
           if (Object.hasOwnProperty.call(tiles, tile)) {
@@ -114,6 +116,7 @@ firebase.auth().onAuthStateChanged((user) => {
           }
       }
   }
+  
 });
 closeBtn.addEventListener('click', () => {
     

@@ -13,8 +13,8 @@
     </div>
 
     <button onclick="OpenLoginForm()">Sign in</button>
-    <button id="signOut" style="display:none;">Sign out</button>
-    <div id="UserInfo"></div>
+    <button id="signOut" >Sign out</button>
+    <div id="UserInfo">You are signed in</div>
 </div>
 <div class="wrapper">
     <div id="special-badge">
@@ -533,11 +533,18 @@
                 <label for="description">Description</label>
                 <textarea id="text-input" name="description" placeholder="Write something.."
                     style="height:200px"></textarea>
+                <label for="category">Category</label>
+                <select id="category-select" name="category">
+                    <option value="Local">Local</option>
+                    <option value="Regional">Regional</option>
+                    <option value="EU">EU</option>
+                    <option value="International">International</option>
+                </select>
+
                 <label for="tags">Tags (tag1,tag2,tag3)</label>
                 <input type="text" id="tags-input" name="tags" placeholder="Your tags..">
                 <label for="category">Project status</label>
                 <input id="special-badge-input" type="text" name="special-badge" placeholder="Your project status..">
-
             </form>
             <div class="popup-buttons">
                 <button type="submit" class="submitBtn">Submit</button>
