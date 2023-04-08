@@ -11,11 +11,14 @@
         </p>
         <p></p>
     </div>
-
-    <button onclick="OpenLoginForm()">Sign in</button>
-    <button id="signOut" style="display:none;">Sign out</button>
-    <div id="UserInfo"></div>
 </div>
+
+<div id="signIn-container">
+  <button id="signIn" onclick="OpenLoginForm()">Sign in</button>
+  <button id="signOut" style="display:none;">Sign out</button>
+  <div id="UserInfo"></div>
+</div>
+
 <div class="wrapper">
     <div id="special-badge">
         <button class="btn active" onclick="filterSelection('all')"> All</button>
@@ -548,7 +551,7 @@
     </div>
     <div class="popup-container" id="form-login">
         <div class="popup-content">
-            <h3>Login</h3>
+            <h3>Sign in</h3>
             <form>
                 <label for="email">Email</label>
                 <input id="email-input" type="text" name="email" placeholder="Your email..">
@@ -556,7 +559,7 @@
                 <input id="password-input" type="password" name="password" placeholder="Your password..">
             </form>
             <div class="popup-buttons">
-                <button type="submit" class="submitLogin">Login</button>
+                <button type="submit" class="submitLogin">Sign in</button>
 
                 <button type="button" class="closeLogin" onclick="CloseLoginForm()">Close</button>
             </div>
