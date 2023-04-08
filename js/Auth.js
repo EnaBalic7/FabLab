@@ -30,11 +30,7 @@ loginBtn.onclick = () => {
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
         .then((userCredential) => {
             // User signed in successfully
-            addProjectDiv.style.display = 'block';
-            alert("Login successful");
-            userInfo.innerText = "Welcome " + userCredential.user.email;
-            signOutBtn.style.display = "inline";
-            
+            addProjectDiv.style.display = 'block';   
             CloseLoginForm();
         })
         .catch((error) => {
@@ -45,9 +41,6 @@ loginBtn.onclick = () => {
 signOutBtn.onclick = () => {
     firebase.auth().signOut().then(() => {
         // Sign-out successful.
-        alert("Sign out successful");
-        userInfo.innerText ="";
-        signOutBtn.style.display = "none";
         
     }).catch((error) => {
         // An error happened.

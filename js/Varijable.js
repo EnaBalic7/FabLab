@@ -23,4 +23,23 @@ const specialBadgeInput = document.querySelector('#special-badge-input');
 const imagePreview = document.querySelector('.imagePreview');
 
 const addProjectDiv = document.querySelector('#addProject');
+
+const categorySelect = document.getElementById("category-select");
+let selectedCategory ;
+categorySelect.addEventListener("change", function() {
+     selectedCategory = categorySelect.value; 
+  });
+
 let imageDataUrl;
+fileInput.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    
+    reader.onload = () => {
+        imageDataUrl = reader.result;
+        imagePreview.style.display = 'block';
+        imagePreview.style.backgroundImage = `url(${imageDataUrl})`;
+    }; 
+});

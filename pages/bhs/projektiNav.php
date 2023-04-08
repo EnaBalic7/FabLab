@@ -16,6 +16,10 @@
     <script src="../../js/fotoramaMin.js"></script>
     <script src="../../js/script.js"></script>
     <script src="../../js/icons.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+   <script defer src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+   <script defer src="../../js/Varijable.js"></script>
+   <script defer src="../../js/Auth.js"></script>
     <script defer src="../../js/addProject.js"></script>
 
   <style>
