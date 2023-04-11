@@ -11,9 +11,11 @@
         </p>
         <p></p>
     </div>
-    <button onclick="OpenLoginForm()">Prijavite se</button>
-    <button id="signOut">Odjavite se</button>
-    <div id="UserInfo">Uspješno ste prijavljeni</div>
+    <div id="signIn-container">
+  <button id="signIn" onclick="OpenLoginForm()">Prijavi se</button>
+  <button id="signOut" >Odjavi se</button>
+  <div id="UserInfo">Prijavljeni ste!</div>
+</div>
 </div>
 <div class="wrapper">
     <div id="special-badge">
@@ -519,29 +521,29 @@
                 <label for="file-upload">Odaberi JPEG, PNG, ili GIF file:</label>
                 <input type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
                 <div class='imagePreview'></div>
-                <label for="title">Naslov</label>
+                <label for="title">Naslov prednje strane kartice</label>
                 <input id="title-input" type="text" name="title" placeholder="Tvoj naslov..">
-                <label for="category">Podnaslov</label>
+                <label for="category">Naslov stražnje strane kartice (duži)</label>
                 <input id="subtitle-input" type="text" name="subtitle" placeholder="Tvoj podnaslov..">
-                <label for="description">Opis</label>
+                <label for="description">Opis projekta stražnje strane kartice</label>
                 <textarea id="text-input" name="description" placeholder="Napiši nešto.."
                     style="height:200px"></textarea>
-                <label for="category">Regioni</label>
+                <label for="category">Regije</label>
                 <select id="category-select" name="category">
                     <option value="Lokalno">Lokalno</option>
                     <option value="Regionalno">Regionalno</option>
                     <option value="EU">EU</option>
-                    <option value="Internationalno">Internationalno</option>
+                    <option value="Internationalno">Međunarodno</option>
                 </select>
-                <label for="tags">Tagovi (tag1,tag2,tag3)</label>
+                <label for="tags">Oznake (oznaka1,oznaka2,oznaka3)</label>
                 <input type="text" id="tags-input" name="tags" placeholder="Tvoji tagovi..">
-                <label for="category">Status projekta</label>
+                <label for="category">Godina projekta (ili U tijeku)</label>
                 <input id="special-badge-input" type="text" name="special-badge" placeholder="Tvoj status projekta..">
-
+              <label for="hyperlink">Pročitajte više link</label>
+             <input id="hyperlink-input" type="url" name="hyperlink" placeholder="https://www.example.com">
             </form>
             <div class="popup-buttons">
                 <button type="submit" class="submitBtn">Submit</button>
-
                 <button type="button" class="closeBtn">Close</button>
             </div>
         </div>

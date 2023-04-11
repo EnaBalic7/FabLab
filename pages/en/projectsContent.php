@@ -14,9 +14,9 @@
 </div>
 
 <div id="signIn-container">
-  <button id="signIn" onclick="OpenLoginForm()">Sign in</button>
-  <button id="signOut" style="display:none;">Sign out</button>
-  <div id="UserInfo"></div>
+    <button id="signIn" onclick="OpenLoginForm()">Sign in</button>
+    <button id="signOut">Sign out</button>
+    <div id="UserInfo">You are signed in!</div>
 </div>
 
 <div class="wrapper">
@@ -529,11 +529,11 @@
                 <label for="file-upload">Select a JPEG, PNG, or GIF file:</label>
                 <input type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
                 <div class='imagePreview'></div>
-                <label for="title">Title</label>
+                <label for="title">Front Card Header</label>
                 <input id="title-input" type="text" name="title" placeholder="Your title..">
-                <label for="category">Subtitle</label>
+                <label for="category"> Back Card Header (longer)</label>
                 <input id="subtitle-input" type="text" name="subtitle" placeholder="Your subtitle..">
-                <label for="description">Description</label>
+                <label for="description">Back Card project description</label>
                 <textarea id="text-input" name="description" placeholder="Write something.."
                     style="height:200px"></textarea>
                 <label for="category">Regions</label>
@@ -543,11 +543,12 @@
                     <option value="EU">EU</option>
                     <option value="International">International</option>
                 </select>
-
                 <label for="tags">Tags (tag1,tag2,tag3)</label>
                 <input type="text" id="tags-input" name="tags" placeholder="Your tags..">
-                <label for="category">Project status</label>
-                <input id="special-badge-input" type="text" name="special-badge" placeholder="Your project status..">
+                <label for="category">Project Year (or In Progress)</label>
+                <input id="special-badge-input" type="text" name="special-badge" placeholder="Your project year..">
+                <label for="hyperlink">Read More link</label>
+                <input id="hyperlink-input" type="url" name="hyperlink" placeholder="https://www.example.com">
             </form>
             <div class="popup-buttons">
                 <button type="submit" class="submitBtn">Submit</button>

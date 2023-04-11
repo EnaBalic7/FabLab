@@ -1,5 +1,5 @@
 
-function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup) {
+function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,hyperLinkInput,popup) {
     fileInput.value = "";
     titleInput.value = "";
     textInput.value = "";
@@ -8,11 +8,11 @@ function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeIn
     subTitleInput.value = "";
     imagePreview.style.display = 'none';
     imagePreview.style.backgroundImage = "";
+    hyperLinkInput.value="";
     popup.style.display = 'none';
 }
 function validateInputs() {
-    if (titleInput.value === "" || textInput.value === "" || tagsInput.value === "" || imageDataUrl === undefined || specialBadgeInput.value === "" || subTitleInput.value === "") {
-
+    if (titleInput.value === "" || textInput.value === "" || tagsInput.value === "" || imageDataUrl === undefined || specialBadgeInput.value === "" || subTitleInput.value === ""||hyperLinkInput.value==="") {
         alert("Please fill all inputs");
         return false;
     }
@@ -47,9 +47,9 @@ let addProject = () => {
         return;
     };
     //innerHTML privremena pohrana
-    tile.innerHTML = ' <div class="special-badge"> <div style="display: flex;"> <span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"> <img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"> <a href="#" target="_blank"><h1> ' + titleInput.value + ' </h1>  </a> ' + tag.outerHTML + ' </div></div><!--end of flip-inner --><div class="flip-card-backP"><h3>' + subTitleInput.value + ' </h3><p> ' + textInput.value + '</p></div></div>';
+    tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> '+specialBadgeInput.value+' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="'+imageDataUrl+'" width="100%" alt=""></div><div class="tile-body"><h3>'+titleInput.value+' </h3>'+tag.outerHTML+'</div></div><div class="flip-card-backP txtChangeSmaller"><h6>'+subTitleInput.value+'</h6><p>'+textInput.value+'</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="'+hyperLinkInput.value+'" target="_blank">Read more</a></div></div></div></div></div>';
     addProjectDiv.after(tile);
-    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
+    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,hyperLinkInput,popup);
 }
 
 let editProject = (tile) => {
@@ -58,26 +58,28 @@ let editProject = (tile) => {
         return;
     };
     //innerHTML privremena pohrana
-    tile.innerHTML = ' <div class="special-badge"> <div style="display: flex;"> <span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"> <img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"> <a href="#" target="_blank"><h1> ' + titleInput.value + ' </h1>  </a> ' + tag.outerHTML + ' </div></div><!--end of flip-inner --><div class="flip-card-backP"><h3>' + subTitleInput.value + ' </h3><p> ' + textInput.value + '</p></div></div>'; 
+    tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> '+specialBadgeInput.value+' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="'+imageDataUrl+'" width="100%" alt=""></div><div class="tile-body"><h3>'+titleInput.value+' </h3>'+tag.outerHTML+'</div></div><div class="flip-card-backP txtChangeSmaller"><h6>'+subTitleInput.value+'</h6><p>'+textInput.value+'</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="'+hyperLinkInput.value+'" target="_blank">Read more</a></div></div></div></div></div>'; 
     
-    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
+    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,hyperLinkInput,popup);
 }
 //kontrola popupa 
-
+filterSelection("all", "");
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
       
       userInfo.style.display = "block";
       // Add project button
       addProjectDiv.onclick = () => {
+         
           popup.style.display = 'block';
           submitBtn.innerText = 'Add project';
           document.querySelector(".popup-content").children[0].innerText = "Add New Project";
           submitBtn.onclick = () => {
               addProject();
+              filterSelection("all", "");
           }
       }
-
+      
       // Edit project button
       for (const tile in tiles) {
           if (Object.hasOwnProperty.call(tiles, tile)) {
@@ -101,7 +103,7 @@ firebase.auth().onAuthStateChanged((user) => {
           if (Object.hasOwnProperty.call(tiles, tile)) {
               let element = tiles[tile];    
               element.onclick = () => {
-                  alert("You need to be logged in to edit a project");
+                 console.log("You must be logged in to edit projects");
               }
           }
       }
@@ -111,11 +113,8 @@ firebase.auth().onAuthStateChanged((user) => {
 
 // Close popup
 closeBtn.addEventListener('click', () => {
-    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,popup);
+  ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,hyperLinkInput,popup);
 });
-
-
-
 
 
 function filterSelection(inProgress, tag) {
@@ -136,7 +135,7 @@ function filterSelection(inProgress, tag) {
   }
 } 
 // prikazi sve projekte 
-filterSelection("all", "");
+
 
 var btnContainer = document.getElementById("special-badge");
 var btns = btnContainer.getElementsByClassName("btn");

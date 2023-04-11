@@ -13,19 +13,21 @@ const popup = document.querySelector('.popup-container');
 const closeBtn = document.querySelector('.closeBtn');
 const submitBtn = document.querySelector('.submitBtn');
 
-
+//forma
 const fileInput = document.querySelector('#file-upload');
 const titleInput = document.querySelector('#title-input');
 const subTitleInput = document.querySelector('#subtitle-input');
 const textInput = document.querySelector('#text-input');
 const tagsInput = document.querySelector('#tags-input');
 const specialBadgeInput = document.querySelector('#special-badge-input');
+const hyperLinkInput = document.querySelector('#hyperlink-input');
+
 const imagePreview = document.querySelector('.imagePreview');
 
 const addProjectDiv = document.querySelector('#addProject');
 
 const categorySelect = document.getElementById("category-select");
-let selectedCategory ;
+let selectedCategory ="Local";
 categorySelect.addEventListener("change", function() {
      selectedCategory = categorySelect.value; 
   });
