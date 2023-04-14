@@ -24,7 +24,9 @@ const hyperLinkInput = document.querySelector('#hyperlink-input');
 
 const imagePreview = document.querySelector('.imagePreview');
 
+
 const addProjectDiv = document.querySelector('#addProject');
+
 
 const categorySelect = document.getElementById("category-select");
 let selectedCategory ="Local";

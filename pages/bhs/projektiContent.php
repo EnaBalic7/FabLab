@@ -12,10 +12,10 @@
         <p></p>
     </div>
     <div id="signIn-container">
-  <button id="signIn" onclick="OpenLoginForm()">Prijavi se</button>
-  <button id="signOut" >Odjavi se</button>
-  <div id="UserInfo">Prijavljeni ste!</div>
-</div>
+        <button id="signIn" onclick="OpenLoginForm()">Prijavi se</button>
+        <button id="signOut">Odjavi se</button>
+        <div id="UserInfo">Prijavljeni ste!</div>
+    </div>
 </div>
 <div class="wrapper">
     <div id="special-badge">
@@ -51,7 +51,7 @@
             </div>
 
         </div>
-
+        
         <div class="tile in-progress Maker-Movement Distributed-Design">
             <!--ovo je flip-card -->
             <div class="special-badge">
@@ -539,8 +539,8 @@
                 <input type="text" id="tags-input" name="tags" placeholder="Tvoji tagovi..">
                 <label for="category">Godina projekta (ili U tijeku)</label>
                 <input id="special-badge-input" type="text" name="special-badge" placeholder="Tvoj status projekta..">
-              <label for="hyperlink">Pročitajte više link</label>
-             <input id="hyperlink-input" type="url" name="hyperlink" placeholder="https://www.example.com">
+                <label for="hyperlink">Pročitajte više link</label>
+                <input id="hyperlink-input" type="url" name="hyperlink" placeholder="https://www.example.com">
             </form>
             <div class="popup-buttons">
                 <button type="submit" class="submitBtn">Submit</button>

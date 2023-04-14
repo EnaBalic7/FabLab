@@ -1,119 +1,139 @@
 
-function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,hyperLinkInput,popup) {
-    fileInput.value = "";
-    titleInput.value = "";
-    textInput.value = "";
-    tagsInput.value = "";
-    specialBadgeInput.value = "";
-    subTitleInput.value = "";
-    imagePreview.style.display = 'none';
-    imagePreview.style.backgroundImage = "";
-    hyperLinkInput.value="";
-    popup.style.display = 'none';
+function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview, hyperLinkInput, popup) {
+  fileInput.value = "";
+  titleInput.value = "";
+  textInput.value = "";
+  tagsInput.value = "";
+  specialBadgeInput.value = "";
+  subTitleInput.value = "";
+  imagePreview.style.display = 'none';
+  imagePreview.style.backgroundImage = "";
+  hyperLinkInput.value = "";
+  popup.style.display = 'none';
 }
 function validateInputs() {
-    if (titleInput.value === "" || textInput.value === "" || tagsInput.value === "" || imageDataUrl === undefined || specialBadgeInput.value === "" || subTitleInput.value === ""||hyperLinkInput.value==="") {
-        alert("Please fill all inputs");
-        return false;
-    }
-    return true;
+  if (titleInput.value === "" || textInput.value === "" || tagsInput.value === "" || imageDataUrl === undefined || specialBadgeInput.value === "" || subTitleInput.value === "" || hyperLinkInput.value === "") {
+    alert("Please fill all inputs");
+    return false;
+  }
+  return true;
 }
 const CreateElement = (tag, className) => {
-    const element = document.createElement(tag);
-    element.classList.add(className);
-    return element;
+  const element = document.createElement(tag);
+  element.classList.add(className);
+  return element;
 };
 
 const CreateTag = (tags) => {
-    const tileTags = CreateElement('div', 'tile-tagsProjects');
-    const tagsArray = tags.split(',');
-    //region tag
-    const regionTag=CreateElement('div','tagProject');
-    regionTag.innerText=selectedCategory;
-    tileTags.appendChild(regionTag);
-    //end region tag
-    tagsArray.forEach(tag => {
-        const tileTagsDiv = CreateElement('div', 'tagProject');
-        tileTagsDiv.innerText = tag;
-        tileTags.appendChild(tileTagsDiv);
-    });
-    return tileTags;
+  const tileTags = CreateElement('div', 'tile-tagsProjects');
+  const tagsArray = tags.split(',');
+  //region tag
+  const regionTag = CreateElement('div', 'tagProject');
+  regionTag.innerText = selectedCategory;
+  tileTags.appendChild(regionTag);
+  //end region tag
+  tagsArray.forEach(tag => {
+    const tileTagsDiv = CreateElement('div', 'tagProject');
+    tileTagsDiv.innerText = tag;
+    tileTags.appendChild(tileTagsDiv);
+  });
+  return tileTags;
 };
 let addProject = () => {
-    const tag = CreateTag(tagsInput.value);
-    const tile = CreateElement('div', 'tile');
-    
-    if (!validateInputs()) {
-        return;
-    };
-    //innerHTML privremena pohrana
-    tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> '+specialBadgeInput.value+' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="'+imageDataUrl+'" width="100%" alt=""></div><div class="tile-body"><h3>'+titleInput.value+' </h3>'+tag.outerHTML+'</div></div><div class="flip-card-backP txtChangeSmaller"><h6>'+subTitleInput.value+'</h6><p>'+textInput.value+'</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="'+hyperLinkInput.value+'" target="_blank">Read more</a></div></div></div></div></div>';
-    addProjectDiv.after(tile);
-    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,hyperLinkInput,popup);
+  const tag = CreateTag(tagsInput.value);
+  const tile = CreateElement('div', 'tile');
+  if (!validateInputs()) {
+    return;
+  };
+  //innerHTML privremena pohrana
+  tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"><h3>' + titleInput.value + ' </h3>' + tag.outerHTML + '</div></div><div class="flip-card-backP txtChangeSmaller"><h6>' + subTitleInput.value + '</h6><p>' + textInput.value + '</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="' + hyperLinkInput.value + '" target="_blank">Read more</a></div></div></div></div></div>';
+  // add tile data to localStorage
+  addProjectDiv.after(tile);
+  tileData = {
+    title: titleInput.value,
+    tags: tagsInput.value,
+    specialBadge: specialBadgeInput.value,
+    subTitle: subTitleInput.value,
+    text: textInput.value,
+    hyperLink: hyperLinkInput.value,
+    imageDataUrl: imageDataUrl
+  };
+  localStorage.setItem('tileData', JSON.stringify(tileData));
+  ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview, hyperLinkInput, popup);
+}
+let retrieveData = () => {
+  let tileData = JSON.parse(localStorage.getItem('tileData'));
+  if(tileData === null) return;
+  const tag = CreateTag(tileData.tags);
+  const tile = CreateElement('div', 'tile');
+  tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> ' + tileData.specialBadge + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="' + tileData.imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"><h3>' + tileData.title + ' </h3>' + tag.outerHTML + '</div></div><div class="flip-card-backP txtChangeSmaller"><h6>' + tileData.subTitle + '</h6><p>' + tileData.text + '</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="' + tileData.hyperLink + '" target="_blank">Read more</a></div></div></div></div></div>';
+  addProjectDiv.after(tile);
 }
 
 let editProject = (tile) => {
-    const tag = CreateTag(tagsInput.value);
-    if (!validateInputs()) {
-        return;
-    };
-    //innerHTML privremena pohrana
-    tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> '+specialBadgeInput.value+' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="'+imageDataUrl+'" width="100%" alt=""></div><div class="tile-body"><h3>'+titleInput.value+' </h3>'+tag.outerHTML+'</div></div><div class="flip-card-backP txtChangeSmaller"><h6>'+subTitleInput.value+'</h6><p>'+textInput.value+'</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="'+hyperLinkInput.value+'" target="_blank">Read more</a></div></div></div></div></div>'; 
-    
-    ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,hyperLinkInput,popup);
+  const tag = CreateTag(tagsInput.value);
+  if (!validateInputs()) {
+    return;
+  };
+  //innerHTML privremena pohrana
+  tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"><h3>' + titleInput.value + ' </h3>' + tag.outerHTML + '</div></div><div class="flip-card-backP txtChangeSmaller"><h6>' + subTitleInput.value + '</h6><p>' + textInput.value + '</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="' + hyperLinkInput.value + '" target="_blank">Read more</a></div></div></div></div></div>';
+  ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview, hyperLinkInput, popup);
 }
 //kontrola popupa 
+retrieveData();
 filterSelection("all", "");
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-      
-      userInfo.style.display = "block";
-      // Add project button
-      addProjectDiv.onclick = () => {
-         
-          popup.style.display = 'block';
-          submitBtn.innerText = 'Add project';
-          document.querySelector(".popup-content").children[0].innerText = "Add New Project";
-          submitBtn.onclick = () => {
-              addProject();
-              filterSelection("all", "");
-          }
-      }
-      
-      // Edit project button
-      for (const tile in tiles) {
-          if (Object.hasOwnProperty.call(tiles, tile)) {
-              let element = tiles[tile];    
-              element.onclick = () => {
-                  popup.style.display = 'block';
-                  document.querySelector(".popup-content").children[0].innerText = "Edit project";
-                  submitBtn.innerText = 'Edit project';
-                  submitBtn.onclick = () => {
-                      editProject(element);
-                  }
-              }
-          }
-      }
 
-  } else if(!user) {
-      
-      userInfo.style.display = "none";
-      addProjectDiv.style.display = 'none';
-      for (const tile in tiles) {
-          if (Object.hasOwnProperty.call(tiles, tile)) {
-              let element = tiles[tile];    
-              element.onclick = () => {
-                 console.log("You must be logged in to edit projects");
-              }
-          }
+    userInfo.style.display = "block";
+    // Add project button
+    addProjectDiv.onclick = () => {
+
+      popup.style.display = 'block';
+      submitBtn.innerText = 'Add project';
+      document.querySelector(".popup-content").children[0].innerText = "Add New Project";
+      submitBtn.onclick = () => {
+        
+        
+        addProject();
+        filterSelection("all", "");
       }
+    }
+
+    // Edit project button
+    for (const tile in tiles) {
+      if (Object.hasOwnProperty.call(tiles, tile)) {
+        let element = tiles[tile];
+        element.onclick = () => {
+          popup.style.display = 'block';
+          document.querySelector(".popup-content").children[0].innerText = "Edit project";
+          submitBtn.innerText = 'Edit project';
+          submitBtn.onclick = () => {
+            editProject(element);
+          }
+        }
+      }
+    }
+
+  } else if (!user) {
+
+    userInfo.style.display = "none";
+    addProjectDiv.style.display = 'none';
+    for (const tile in tiles) {
+      if (Object.hasOwnProperty.call(tiles, tile)) {
+        let element = tiles[tile];
+        element.onclick = () => {
+          console.log("You must be logged in to edit projects");
+        }
+      }
+    }
   }
-  
+
 });
 
 // Close popup
 closeBtn.addEventListener('click', () => {
-  ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview,hyperLinkInput,popup);
+  ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview, hyperLinkInput, popup);
 });
 
 
@@ -123,17 +143,17 @@ function filterSelection(inProgress, tag) {
     var showTile = true;
     if (inProgress && !x[i].classList.contains(inProgress) && inProgress !== "all") {
       showTile = false;
-    } 
-   if (tag && !x[i].classList.contains(tag) && tag !== "all") {
-     showTile = false;
-   }
+    }
+    if (tag && !x[i].classList.contains(tag) && tag !== "all") {
+      showTile = false;
+    }
     if (showTile) {
       x[i].classList.add("show");
     } else {
       x[i].classList.remove("show");
     }
   }
-} 
+}
 // prikazi sve projekte 
 
 
@@ -141,7 +161,7 @@ var btnContainer = document.getElementById("special-badge");
 var btns = btnContainer.getElementsByClassName("btn");
 
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function () {
     var current = document.querySelector("#special-badge .active");
     if (current) {
       current.classList.remove("active");
@@ -158,7 +178,7 @@ for (var i = 0; i < btns.length; i++) {
 var tagContainer = document.getElementById("tags");
 var tags = tagContainer.getElementsByClassName("btn");
 for (var i = 0; i < tags.length; i++) {
-  tags[i].addEventListener("click", function() {
+  tags[i].addEventListener("click", function () {
     var tag = this.getAttribute("data-tag");
     filterSelection(inProgress, tag);
   });
@@ -182,7 +202,7 @@ for (var i = 0; i < tilea.length; i++) {
   }
 }
 // sortiranje tagova po broju pojavljivanja
-var sortedTags = Object.keys(tagCounts).sort(function(a, b) {
+var sortedTags = Object.keys(tagCounts).sort(function (a, b) {
   return tagCounts[b] - tagCounts[a];
 });
 
@@ -193,7 +213,7 @@ for (var i = 0; i < 5; i++) {
   button.className = 'btn';
   button.textContent = tag + " (" + tagCounts[tag] + ")";
   button.setAttribute("data-tag", tag);
-  button.addEventListener('click', function() {
+  button.addEventListener('click', function () {
     var current = document.querySelector("#tags .active");
     if (current) {
       current.classList.remove("active");
