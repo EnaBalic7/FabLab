@@ -70,10 +70,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100vh;  
   z-index: 1;
-  margin-top: 20px;
   background-color: #12121280;
+  overflow-y: auto;
 }
 
 #form-input {
@@ -124,6 +124,38 @@ textarea {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .popup-content {
+    width: 90%;
+    margin-top: 30px;
+  }
+  .submitBtn,
+  .closeBtn {
+    width: 60%;
+    margin-top: 2%;
+  }
+}
+@media (min-width: 601px) and (max-width: 766px) {
+  .popup-content {
+    margin-top: 130px;
+    width: 90%;
+    height: auto;
+  }
+}
+@media (min-width: 767px) and (max-width: 1274px) {
+  .popup-content {
+    margin-top: 75px; 
+    width: 90%;
+    height: auto;
+  }
+}
+@media (min-width: 1275px) {
+  .popup-content {
+    margin-top: 25px; 
+    width: 90%;
+    height: auto;
+  }
+}
 input[type="file"] {
   display: none;
 }
@@ -145,7 +177,39 @@ label[for="file-upload"] {
   perspective: 1000px;
   height: 570px;
 }
-
+@media (max-width: 600px) {
+  #addProject {
+    width: 100%;
+    height: 570px;
+  }
+}
+@media (min-width: 601px) and (max-width: 840px) {
+  #addProject {
+    width: 70%;
+    height: 570px;
+  }
+}
+@media (min-width: 841px) and (max-width: 991px) {
+  #addProject {
+    width: 45%;
+    height: 570px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  #addProject {
+    width: 45%;
+    height: 570px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1101px) {
+  #addProject {
+    width: 31%;
+    height: 570px;
+    margin-top: 20px;
+  }
+}
 #addProject:hover {
   transform: scale(1.05);
   border: 1px solid gray;
@@ -165,7 +229,7 @@ background-repeat: no-repeat;
   align-items: center;
   margin: 0 auto;
   margin-top: 40px;
-  width: 75%;
+  width:75%;
 }
 #special-badge {
   display: flex;
@@ -175,9 +239,15 @@ background-repeat: no-repeat;
   margin-bottom: 1em;
 }
 #special-badge .btn {
-  background-color: rgb(30, 119, 30);
+  padding: 0.5em 1.2em;
+  margin: 5px; 
+  border-radius: 5px;
+  cursor: pointer;
   color: white;
+  border: none;
+  background-color: rgb(30, 119, 30);
 }
+
 #special-badge .btn.btn.active {
   background-color: rgb(46, 182, 46);
   color: white;
@@ -209,6 +279,12 @@ background-repeat: no-repeat;
   cursor: pointer;
   color: white;
   border: none;
+}
+@media (max-width: 767px) {
+  .btn {
+    margin: 5px;
+    font-size: 12px;
+  }
 }
 #tags .btn {
   background-color: #da1717;
@@ -319,4 +395,73 @@ input[type="password"] {
 #signIn:hover,
 #signOut:hover {
   opacity: 0.8;
+}
+@media (max-width: 600px) {
+  #signIn-container {
+    top: 10px;
+    right: 1px;
+    margin-top: 40px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  #signIn,
+  #signOut {
+    width: 60px;
+    margin-left: 3px; 
+    font-size: 10px;
+    flex: 1; 
+  }
+  #UserInfo {
+    font-size: 10px;
+    align-self: flex-end;
+    margin-top: 1px; 
+    width: 100%; 
+    text-align: right; 
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  #signIn-container {
+    top: 10px;
+    right: 10px;
+    margin-top: 140px;
+  }
+  #signIn,
+  #signOut {
+    width: 70px;
+    font-size: 10px;
+  }
+  #UserInfo {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 774px) {
+  #signIn-container {
+    top: 10px;
+    right: 10px;
+    margin-top: 140px;
+  }
+  #signIn,
+  #signOut {
+    width: 80px;
+    font-size: 14px;
+  }
+  #UserInfo {
+    font-size: 12px;
+  }
+}
+@media (min-width: 775px) and (max-width: 1407px) {
+  #signIn-container {
+    top: 10px;
+    right: 10px;
+    margin-top: 90px;
+  }
+  #signIn,
+  #signOut {
+    width: 80px;
+    font-size: 14px;
+  }
+  #UserInfo {
+    font-size: 12px;
+  }
 }
