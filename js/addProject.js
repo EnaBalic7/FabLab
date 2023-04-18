@@ -100,28 +100,23 @@ let addProject = () => {
     return;
   };
   //innerHTML privremena pohrana
-  tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"><h3>' + titleInput.value + ' </h3>' + tag.outerHTML + '</div></div><div class="flip-card-backP txtChangeSmaller"><h6>' + subTitleInput.value + '</h6><p>' + textInput.value + '</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="' + hyperLinkInput.value + '" target="_blank">Read more</a></div></div></div></div></div>';
-  // add tile data to localStorage
+  tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img style="height:50%;" src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"><h3>' + titleInput.value + ' </h3>' + tag.outerHTML + '</div></div><div class="flip-card-backP txtChangeSmaller"><h6>' + subTitleInput.value + '</h6><p>' + textInput.value + '</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="' + hyperLinkInput.value + '" target="_blank">Read more</a></div></div></div></div></div>';
+
+  let tilesData = JSON.parse(localStorage.getItem('tilesData')) || [];
+  tilesData.push(tile.innerHTML);
+  localStorage.setItem('tilesData', JSON.stringify(tilesData));
   addProjectDiv.after(tile);
-  tileData = {
-    title: titleInput.value,
-    tags: tagsInput.value,
-    specialBadge: specialBadgeInput.value,
-    subTitle: subTitleInput.value,
-    text: textInput.value,
-    hyperLink: hyperLinkInput.value,
-    imageDataUrl: imageDataUrl
-  };
-  localStorage.setItem('tileData', JSON.stringify(tileData));
+
   ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview, hyperLinkInput, popup);
 }
 let retrieveData = () => {
-  let tileData = JSON.parse(localStorage.getItem('tileData'));
+  let tileData = JSON.parse(localStorage.getItem('tilesData'));
   if(tileData === null) return;
-  const tag = CreateTag(tileData.tags);
-  const tile = CreateElement('div', 'tile');
-  tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> ' + tileData.specialBadge + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="' + tileData.imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"><h3>' + tileData.title + ' </h3>' + tag.outerHTML + '</div></div><div class="flip-card-backP txtChangeSmaller"><h6>' + tileData.subTitle + '</h6><p>' + tileData.text + '</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="' + tileData.hyperLink + '" target="_blank">Read more</a></div></div></div></div></div>';
-  addProjectDiv.after(tile);
+  tileData.forEach(tile => {
+    const tileElement = CreateElement('div', 'tile');
+    tileElement.innerHTML = tile;
+    addProjectDiv.after(tileElement);
+  });
 }
 
 let editProject = (tile) => {
@@ -130,7 +125,7 @@ let editProject = (tile) => {
     return;
   };
   //innerHTML privremena pohrana
-  tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"><h3>' + titleInput.value + ' </h3>' + tag.outerHTML + '</div></div><div class="flip-card-backP txtChangeSmaller"><h6>' + subTitleInput.value + '</h6><p>' + textInput.value + '</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="' + hyperLinkInput.value + '" target="_blank">Read more</a></div></div></div></div></div>';
+  tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img style="height:50%;" src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"><h3>' + titleInput.value + ' </h3>' + tag.outerHTML + '</div></div><div class="flip-card-backP txtChangeSmaller"><h6>' + subTitleInput.value + '</h6><p>' + textInput.value + '</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="' + hyperLinkInput.value + '" target="_blank">Read more</a></div></div></div></div></div>';
   ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview, hyperLinkInput, popup);
 }
 //kontrola popupa 
@@ -168,6 +163,10 @@ firebase.auth().onAuthStateChanged((user) => {
         }
       }
     }
+    //edit projects from local storage on click
+   
+    
+
 
   } else if (!user) {
 
