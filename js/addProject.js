@@ -11,13 +11,67 @@ function ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeIn
   hyperLinkInput.value = "";
   popup.style.display = 'none';
 }
+function validateFormInputs() {
+  const frontCardHeader = document.getElementById("title-input").value;
+  const backCardHeader = document.getElementById("subtitle-input").value;
+  const projectDescription = document.getElementById("text-input").value;
+  const projectStatus = document.getElementById("special-badge-input").value;
+  const readMoreLink = document.getElementById("hyperlink-input").value;
+
+  if (frontCardHeader.length > 75) {
+    alert("Front Card Header must be less than 75 characters.");
+    return false;
+  }
+  if (backCardHeader.length > 100) {
+    alert("Back Card Header must be less than 100 characters.");
+    return false;
+  }
+  if (projectDescription.length > 500) {
+    alert("Project Description must be less than 500 characters.");
+    return false;
+  }
+  if (projectStatus.length > 12) {
+    alert("Project Status must be less than 12 characters.");
+    return false;
+  }
+  if (!readMoreLink.includes("http")) {
+    alert("Read More link must be a valid hyperlink.");
+    return false;
+  }
+  return true;
+}
+
+function validateFileUpload() {
+  const fileUpload = document.getElementById("file-upload").value;
+
+  if (!fileUpload) {
+    alert("You must select a file to upload.");
+    return false;
+  } else {
+    const fileExtension = fileUpload.split(".").pop();
+    if (fileExtension !== "jpg" && fileExtension !== "png" && fileExtension !== "gif") {
+      alert("You can only upload JPEG, PNG, or GIF files.");
+      return false;
+    }
+  }
+  return true;
+}
 function validateInputs() {
   if (titleInput.value === "" || textInput.value === "" || tagsInput.value === "" || imageDataUrl === undefined || specialBadgeInput.value === "" || subTitleInput.value === "" || hyperLinkInput.value === "") {
     alert("Please fill all inputs");
     return false;
   }
+  if (!validateFormInputs()) {
+    alert("Please correct form errors");
+    return false;
+  }
+  if (!validateFileUpload()) {
+    return false;
+  }
+  alert("Form has been successfully validated.");
   return true;
 }
+
 const CreateElement = (tag, className) => {
   const element = document.createElement(tag);
   element.classList.add(className);
