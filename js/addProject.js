@@ -17,6 +17,7 @@ function validateFormInputs() {
   const projectDescription = document.getElementById("text-input").value;
   const projectStatus = document.getElementById("special-badge-input").value;
   const readMoreLink = document.getElementById("hyperlink-input").value;
+  const tags = document.getElementById("tags-input").value;
 
   if (frontCardHeader.length > 75) {
     alert("Front Card Header must be less than 75 characters.");
@@ -38,6 +39,10 @@ function validateFormInputs() {
     alert("Read More link must be a valid hyperlink.");
     return false;
   }
+  if (tags.split(",").length > 4) {
+    alert("You can only enter up to 4 tags.");
+    return false;
+  }
   return true;
 }
 
@@ -57,6 +62,14 @@ function validateFileUpload() {
   return true;
 }
 function validateInputs() {
+  const titleInput = document.getElementById("title-input");
+  const subTitleInput = document.getElementById("subtitle-input");
+  const textInput = document.getElementById("text-input");
+  const tagsInput = document.getElementById("tags-input");
+  const imageDataUrl = document.querySelector(".imagePreview img");
+  const specialBadgeInput = document.getElementById("special-badge-input");
+  const hyperLinkInput = document.getElementById("hyperlink-input");
+
   if (titleInput.value === "" || textInput.value === "" || tagsInput.value === "" || imageDataUrl === undefined || specialBadgeInput.value === "" || subTitleInput.value === "" || hyperLinkInput.value === "") {
     alert("Please fill all inputs");
     return false;
