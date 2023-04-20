@@ -118,11 +118,10 @@ let addProject = () => {
   let tilesData = JSON.parse(localStorage.getItem('tilesData')) || [];
   tilesData.push(tile.innerHTML);
   localStorage.setItem('tilesData', JSON.stringify(tilesData));
-  addProjectDiv.after(tile);
-
+  
   ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview, hyperLinkInput, popup);
 }
-let retrieveData = () => {
+let retrieveData = (user) => {
   let tileData = JSON.parse(localStorage.getItem('tilesData'));
   if(tileData === null) return;
   tileData.forEach(tile => {
@@ -130,6 +129,11 @@ let retrieveData = () => {
     tileElement.innerHTML = tile;
     addProjectDiv.after(tileElement);
   });
+  tiles = document.querySelectorAll('.tile');
+  if(user){
+    editHandler(tiles);
+  }
+ 
 }
 
 let editProject = (tile) => {
@@ -141,41 +145,44 @@ let editProject = (tile) => {
   tile.innerHTML = ' <div ><div class="special-badge"><div style="display: flex;"><span> ' + specialBadgeInput.value + ' </span></div></div><div class="flip-card-innerP"><div class="flip-card-frontP"><div class="tile-image"><img style="height:50%;" src="' + imageDataUrl + '" width="100%" alt=""></div><div class="tile-body"><h3>' + titleInput.value + ' </h3>' + tag.outerHTML + '</div></div><div class="flip-card-backP txtChangeSmaller"><h6>' + subTitleInput.value + '</h6><p>' + textInput.value + '</p><div class="tile-tagsProjects"><div class="tagProject dugmence mob" style="background-color:white;color:black"><a href="' + hyperLinkInput.value + '" target="_blank">Read more</a></div></div></div></div></div>';
   ResetValues(fileInput, titleInput, textInput, tagsInput, specialBadgeInput, subTitleInput, imagePreview, hyperLinkInput, popup);
 }
+let editHandler=(tiles)=>{
+  for (const tile in tiles) {
+    if (Object.hasOwnProperty.call(tiles, tile)) {
+      let element = tiles[tile];
+      element.onclick = () => {
+        popup.style.display = 'block';
+        document.querySelector(".popup-content").children[0].innerText = "Edit project";
+        submitBtn.innerText = 'Edit project';
+        submitBtn.onclick = () => {
+          editProject(element);
+        }
+      }
+    }
+  }
+
+}
 //kontrola popupa 
 retrieveData();
 filterSelection("all", "");
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-
+    
+   
     userInfo.style.display = "block";
-    // Add project button
     addProjectDiv.onclick = () => {
 
       popup.style.display = 'block';
       submitBtn.innerText = 'Add project';
       document.querySelector(".popup-content").children[0].innerText = "Add New Project";
       submitBtn.onclick = () => {
-        
-        
         addProject();
+        retrieveData(user);
         filterSelection("all", "");
       }
     }
 
     // Edit project button
-    for (const tile in tiles) {
-      if (Object.hasOwnProperty.call(tiles, tile)) {
-        let element = tiles[tile];
-        element.onclick = () => {
-          popup.style.display = 'block';
-          document.querySelector(".popup-content").children[0].innerText = "Edit project";
-          submitBtn.innerText = 'Edit project';
-          submitBtn.onclick = () => {
-            editProject(element);
-          }
-        }
-      }
-    }
+   editHandler(tiles);
     //edit projects from local storage on click
    
     
@@ -188,9 +195,8 @@ firebase.auth().onAuthStateChanged((user) => {
     for (const tile in tiles) {
       if (Object.hasOwnProperty.call(tiles, tile)) {
         let element = tiles[tile];
-        element.onclick = () => {
-          console.log("You must be logged in to edit projects");
-        }
+        
+        element.onclick = () => { }
       }
     }
   }
