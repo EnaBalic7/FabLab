@@ -151,8 +151,13 @@ let editHandler=(tiles)=>{
       let element = tiles[tile];
       element.onclick = () => {
         popup.style.display = 'block';
+        if(window.location.href.includes("en")){
         document.querySelector(".popup-content").children[0].innerText = "Edit project";
-        submitBtn.innerText = 'Edit project';
+        submitBtn.innerText = 'Edit project';}
+        else{
+          document.querySelector(".popup-content").children[0].innerText = "Uredi projekat";
+          submitBtn.innerText = 'Uredi';
+        }
         submitBtn.onclick = () => {
           editProject(element);
         }
@@ -172,8 +177,9 @@ firebase.auth().onAuthStateChanged((user) => {
     addProjectDiv.onclick = () => {
 
       popup.style.display = 'block';
+      if(window.location.href.includes("en")){
       submitBtn.innerText = 'Add project';
-      document.querySelector(".popup-content").children[0].innerText = "Add New Project";
+      document.querySelector(".popup-content").children[0].innerText = "Add New Project";}
       submitBtn.onclick = () => {
         addProject();
         retrieveData(user);

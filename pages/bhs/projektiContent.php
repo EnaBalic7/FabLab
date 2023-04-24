@@ -516,7 +516,7 @@
     </div>
     <div class="popup-container">
         <div class="popup-content">
-            <h3>Add New Project</h3>
+            <h3>Dodaj novi projekat</h3>
             <form id="form-input">
                 <label for="file-upload">Odaberi JPEG, PNG, ili GIF file:</label>
                 <input type="file" id="file-upload" name="file-upload" accept="image/jpeg,image/png,image/gif">
@@ -543,24 +543,24 @@
                 <input id="hyperlink-input" type="url" name="hyperlink" placeholder="https://www.example.com">
             </form>
             <div class="popup-buttons">
-                <button type="submit" class="submitBtn">Submit</button>
-                <button type="button" class="closeBtn">Close</button>
+                <button type="submit" class="submitBtn">Dodaj</button>
+                <button type="button" class="closeBtn">Zatvori</button>
             </div>
         </div>
     </div>
     <div class="popup-container" id="form-login">
         <div class="popup-content">
-            <h3>Login</h3>
+            <h3>Prijavi se</h3>
             <form>
                 <label for="email">Email</label>
-                <input id="email-input" type="text" name="email" placeholder="Your email..">
-                <label for="password">Password</label>
-                <input id="password-input" type="password" name="password" placeholder="Your password..">
+                <input id="email-input" type="text" name="email" placeholder="Tvoj email..">
+                <label for="password">Lozinka</label>
+                <input id="password-input" type="password" name="password" placeholder="Tvoja lozinka..">
             </form>
             <div class="popup-buttons">
-                <button type="submit" class="submitLogin">Login</button>
+                <button type="submit" class="submitLogin">Prijavi se</button>
 
-                <button type="button" class="closeLogin" onclick="CloseLoginForm()">Close</button>
+                <button type="button" class="closeLogin" onclick="CloseLoginForm()">Zatvori</button>
             </div>
         </div>
     </div>
