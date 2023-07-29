@@ -68,6 +68,11 @@ DirectoryIndex index.php
 <IfModule mod_rewrite.c>
 
   RewriteEngine on
+
+  RewriteBase /
+
+RewriteCond %{REQUEST_URI} !^/fablab/
+RewriteRule ^(.*)$ /fablab/$1 [L]
   
 # Uncomment the following to redirect all visitors to the https version
 # RewriteCond %{HTTPS} off
