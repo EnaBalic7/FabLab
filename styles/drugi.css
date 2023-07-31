@@ -5,7 +5,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 /* hrefs lander */
@@ -843,7 +843,7 @@ footer {
 }
 
 .gh:hover {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 /* memCards za cijene Membership*/
@@ -1385,7 +1385,7 @@ footer {
 .navbarIndex {
     overflow: hidden;
     background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(67, 67, 164, 1) 54%, rgba(0, 212, 255, 1) 100%);
+    background: rgb(2, 0, 36, 0.5);
     display: flex;
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -1399,11 +1399,12 @@ footer {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 0px 20px 0px 20px;
 }
 
 /* Add a red background color to navigation links on hover */
 .navbarIndex a:hover {
-    background-color: #E60000;
+    background-color: #7868E6;
 }
 
 

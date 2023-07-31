@@ -2,15 +2,30 @@
 <!-- Header BEGINING OF THE SITE -->
   <!--Logo slider slika-->
   <div class="pngg">
-     <img src="../../slike/animatedLogo.gif" alt="">
+     <img src="../../slike/newAnimatedLogo.png" alt="">
   </div>
 
   <h1 class="makers">HOME OF THE MAKERS </h1>
 
   <div class="memTab">
-    <div style="overflow-x:auto;">
+    <div style="overflow-x:auto;" class="indexContent">
+      
+
+      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 1.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 2.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 3.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 4.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 5.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 6.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 7.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 8.png" class="contentImg"> </a> </div>
+
+
+
+
+      <!--
       <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <!-- tabela galerija vidljiva samo za desktop racunare, za mobile ce pozvat ispod galeriju efect milo css-->
+        tabela galerija vidljiva samo za desktop racunare, za mobile ce pozvat ispod galeriju efect milo css
 
 
         <tr>
@@ -35,6 +50,9 @@
           </td>
         </tr>
       </table>
+-->
+
+
     </div>
   </div>
   <!--BoxesGaleryEndDesktop -->

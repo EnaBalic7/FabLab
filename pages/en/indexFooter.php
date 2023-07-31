@@ -11,21 +11,21 @@
 
   
   <h4 class="w3-text-white txtCenter">Powered by</h4>
-  <div style="text-align:center;background-color: #F1F1F1">
+  <div style="text-align:center;background-color: rgba(0, 0, 0, 0.452)">
 
-    <div style="background-color: #F1F1F1;">
+    <div>
       <marquee behavior="scroll" direction="left" scrollamount="10" style="margin-top: 1%;">
-        <img src="../../slike/sponzori/solidworks.png" height="50">&emsp;&emsp; <img src="../../slike/sponzori/autodesk.png"
-          height="50">&emsp;&emsp;<img src="../../slike/sponzori/ntopology.png" height="50">&emsp;&emsp;<img
+        <img src="../../slike/sponzori/solidworks.png" height="50">&emsp;&emsp; <img src="../../slike/sponzori/autodeskWhite.png"
+          height="50">&emsp;&emsp;<img src="../../slike/sponzori/ntopologyWhite.png" height="50">&emsp;&emsp;<img
           src="../../slike/sponzori/salesforce.png" height="50">&emsp;&emsp;<img src="../../slike/sponzori/google.png"
-          height="50">&emsp;&emsp;<img src="../../slike/sponzori/slack.png" height="50">&emsp;&emsp; <img
-          src="../../slike/sponzori/gravity.png" height="50">&emsp;&emsp; <img src="../../slike/sponzori/solidworks.png"
+          height="50">&emsp;&emsp;<img src="../../slike/sponzori/slackWhite.png" height="50">&emsp;&emsp; <img
+          src="../../slike/sponzori/gravityGlow.png" height="50">&emsp;&emsp; <img src="../../slike/sponzori/solidworks.png"
           height="50">&emsp;&emsp;
-        <img src="../../slike/sponzori/autodesk.png" height="50">&emsp;&emsp;<img src="../../slike/sponzori/ntopology.png"
+        <img src="../../slike/sponzori/autodeskWhite.png" height="50">&emsp;&emsp;<img src="../../slike/sponzori/ntopologyWhite.png"
           height="50">&emsp;&emsp;
         <img src="../../slike/sponzori/salesforce.png" height="50">&emsp;&emsp;<img src="../../slike/sponzori/google.png"
           height="50">&emsp;&emsp;
-        <img src="../../slike/sponzori/slack.png" height="50">&emsp;&emsp; <img src="../../slike/sponzori/gravity.png"
+        <img src="../../slike/sponzori/slackWhite.png" height="50">&emsp;&emsp; <img src="../../slike/sponzori/gravityGlow.png"
           height="50">&emsp;&emsp;
       </marquee>
       <!-- W3.CSS Container -->
