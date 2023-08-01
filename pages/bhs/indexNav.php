@@ -64,7 +64,7 @@ src="https://www.facebook.com/tr?id=1158314620935416&ev=PageView&noscript=1"
 
 <!-- navigation --> 
 <body style="padding:0px; margin:0px;   background:  rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,67,164,1) 54%, rgba(0,212,255,1) 100%);">
+background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(67,67,164,1) 54%, rgba(0,212,255,1) 100%);">
 <div class="navbar navbarIndex navPosition">
   <div class="nav-head" style="z-index: 10 !important;">
     <img src="../../slike/newLogo.png" class="navLogo">
