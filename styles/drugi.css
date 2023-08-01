@@ -817,7 +817,7 @@ footer {
 }
 
 .fade:hover {
-    color: #CB2026;
+    color: #FF6363;
 }
 
 .fadeN:hover {
@@ -843,9 +843,12 @@ footer {
 }
 
 .gh:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
+.ghWhite:hover{
+    color:white;
+}
 /* memCards za cijene Membership*/
 
 .prices {

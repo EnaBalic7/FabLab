@@ -2,15 +2,29 @@
 <!-- Header BEGINING OF THE SITE -->
   <!--Logo slider slika-->
   <div class="pngg">
-     <img src="../../slike/animatedLogo.gif" alt="">
+     <img src="../../slike/newAnimatedLogo.png" alt="">
   </div>
 
   <h1 class="makers">HOME OF THE MAKERS </h1>
 
   <div class="memTab">
-    <div style="overflow-x:auto;">
+    <div style="overflow-x:auto;" class="indexContent">
+
+
+      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 1_bhs.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/team"> <img src="../../slike/frontpg/Group 2_bhs.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/education"> <img src="../../slike/frontpg/Group 3_bhs.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/ourlabs"> <img src="../../slike/frontpg/Group 4_bhs.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/joinus"> <img src="../../slike/frontpg/Group 5_bhs.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/job"> <img src="../../slike/frontpg/Group 6_bhs.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="https://fablab.ba/htmly/"> <img src="../../slike/frontpg/Group 7.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/donate"> <img src="../../slike/frontpg/Group 8_bhs.png" class="contentImg"> </a> </div>
+
+
+
+      <!--
       <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <!-- tabela galerija vidljiva samo za desktop racunare, za mobile ce pozvat ispod galeriju efect milo css-->
+        tabela galerija vidljiva samo za desktop racunare, za mobile ce pozvat ispod galeriju efect milo css
 
 
         <tr>
@@ -34,7 +48,9 @@
           <td class="colors"><a href="?page=pages/bhs/fabjob"><img src="../../slike/frontpg/fabjob.jpg" alt="" width="100%" border="0"></a>
           </td>
         </tr>
-      </table>
+      </table> -->
+
+
     </div>
   </div>
   <!--BoxesGaleryEndDesktop -->

@@ -12,13 +12,13 @@
       
 
       <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 1.png" class="contentImg"> </a> </div>
-      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 2.png" class="contentImg"> </a> </div>
-      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 3.png" class="contentImg"> </a> </div>
-      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 4.png" class="contentImg"> </a> </div>
-      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 5.png" class="contentImg"> </a> </div>
-      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 6.png" class="contentImg"> </a> </div>
-      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 7.png" class="contentImg"> </a> </div>
-      <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 8.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/team"> <img src="../../slike/frontpg/Group 2.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/education"> <img src="../../slike/frontpg/Group 3.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/ourlabs"> <img src="../../slike/frontpg/Group 4.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/joinus"> <img src="../../slike/frontpg/Group 5.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/job"> <img src="../../slike/frontpg/Group 6.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="https://fablab.ba/htmly/"> <img src="../../slike/frontpg/Group 7.png" class="contentImg"> </a> </div>
+      <div class="colors"> <a href="?page=pages/en/donate"> <img src="../../slike/frontpg/Group 8.png" class="contentImg"> </a> </div>
 
 
 

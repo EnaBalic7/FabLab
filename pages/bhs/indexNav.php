@@ -5,7 +5,7 @@
     <meta name="author" content="FabLab - Sarajevo">
     <title>FabLab Sarajevo - Home To Fabulous FabLab in Sarajevo</title>
     <meta name="robots" content="noindex,nofollow">
-    <link rel="icon" type="image/png" href="../../slike/fav.png">
+    <link rel="icon" type="image/png" href="../../slike/newFav.png">
 
   <script src="../../js/icons.js"></script>
   <script src="../../js/script.js"></script>
@@ -67,7 +67,7 @@ src="https://www.facebook.com/tr?id=1158314620935416&ev=PageView&noscript=1"
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,67,164,1) 54%, rgba(0,212,255,1) 100%);">
 <div class="navbar navbarIndex navPosition">
   <div class="nav-head" style="z-index: 10 !important;">
-    <img src="../../slike/logo.png" class="navLogo">
+    <img src="../../slike/newLogo.png" class="navLogo">
     <div id="hamburger" onclick="toggleNav()">
       <div></div>
       <div></div>
@@ -89,7 +89,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,67,164,1) 54%, rgb
     <a href="https://www.facebook.com/pg/FabLabSarajevo/shop/?rid=100340428073233&rt=6&referral_code=page_shop_card&preview=1"
     target="_blank">Shop</a>
     <a href="?page=pages/bhs/fabjob">FabJob</a>
-    <a href="#" class="pulsate w3-text-red">Live</a>
+    <a href="#" class="w3-text-red">Live</a>
 	 
 	                <span class="lanFlags">
 	  <a href="changelang.php?lang=bhs" class="noHover">

@@ -41,7 +41,7 @@
             <a href="https://www.youtube.com/channel/UCPcQN7iMKPt97w0ktjtk7mQ" target="_blank" title="YouTube"><i
                 class="fab fa-youtube fa-2x yt iconBg"></i></a>
             <a href="https://github.com/FabLab-BiH" target="_blank" title="Github"><i
-                class="fab fa-github fa-2x gh iconBg"></i></a>
+                class="fab fa-github fa-2x ghWhite iconBg"></i></a>
           </div>
           <div class="contactInfo">
             <a href="https://goo.gl/maps/RCPKMmExtiyvqkg87" target="_blank" class="textDecoration"
@@ -55,11 +55,11 @@
             &copy; FabLab 2021 &nbsp;Sarajevo
           </div>
              <div class="terms">
-            <span class="fade"><img src="../../slike/privacy.png" width="20px"><a href="https://fablab.ba/?page=pages/en/terms"
+            <span class="fade"><img src="../../slike/privacyWhite.png" width="20px"><a href="https://fablab.ba/?page=pages/en/terms"
                 class="textDecoration" target="_blank"> Terms of service</a></span><br>
-            <span class="fade"><img src="../../slike/impressum.png" width="20px"> <a href="https://fablab.ba/?page=pages/en/impressum"
+            <span class="fade"><img src="../../slike/impressumWhite.png" width="20px"> <a href="https://fablab.ba/?page=pages/en/impressum"
                 class="textDecoration" target="_blank"> Impressum</a></span> <br>
-            <span class="fade"><img src="../../slike/terms.png" width="20px"> <a href="https://fablab.ba/?page=pages/en/policy"
+            <span class="fade"><img src="../../slike/termsWhite.png" width="20px"> <a href="https://fablab.ba/?page=pages/en/policy"
                 class="textDecoration" target="_blank"> Privacy policy</a> </span>
             <p></p>
           </div>
