@@ -9,30 +9,30 @@
 
   <div class="memTab">
     <div style="overflow-x:auto;">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <table border="0" cellpadding="10px" cellspacing="0" width="100%">
         <!-- tabela galerija vidljiva samo za desktop racunare, za mobile ce pozvat ispod galeriju efect milo css-->
 
 
         <tr>
-          <td class="colors"><a href="?page=pages/en/joinus"><img src="../../slike/frontpg/join.jpg" width="100%" border="0"
-                alt=""></a></td>
-          <td class="colors" rowspan="2"><a href="?page=pages/en/about"><img src="../../slike/frontpg/about.jpg" width="100%" border="0"
-                alt=""></a></td>
-          <td class="colors"><a href="?page=pages/en/donate"><img src="../../slike/frontpg/donate.jpg" width="100%" border="0"
-                alt=""></a></td>
-          <td class="colors"><a href="https://fablab.ba/htmly/" target="_blank"><img src="../../slike/frontpg/newsletter.jpg" width="100%" border="0"
-                alt=""></a></td>
-          <td class="colors"><a href="?page=pages/en/team"><img src="../../slike/frontpg/ourteam.jpg" width="100%" border="0"
+          <td class="colors"><a href="?page=pages/en/about"><img src="../../slike/frontpg/AboutUs.jpg" width="100%" border="0"
+         alt=""></a></td>
+          <td class="colors"><a href="https://fablab.ba/htmly/" target="_blank"><img src="../../slike/frontpg/Team.jpg" width="100%" border="0"
+                alt=""></a></td>     
+          <td class="colors"><a href="?page=pages/en/joinus"><img src="../../slike/frontpg/JoinUs.jpg" width="100%" border="0"
+                alt=""></a></td>      
+          <td class="colors"><a href="?page=pages/en/team"><img src="../../slike/frontpg/News.jpg" width="100%" border="0"
                 alt=""></a></td>
 
         </tr>
         <tr>
-          <td class="colors"><a href="?page=pages/en/education"><img src="../../slike/frontpg/educations.jpg" width="100%" border="0"
+          <td class="colors"><a href="?page=pages/en/education"><img src="../../slike/frontpg/Edu.jpg" width="100%" border="0"
                 alt=""></a></td>
-          <td class="colors" colspan="2"><a href="?page=pages/en/ourlabs"><img src="../../slike/frontpg/ourlabs.jpg" alt=""
+          <td class="colors"><a href="?page=pages/en/ourlabs"><img src="../../slike/frontpg/OurLabs.jpg" alt=""
                 width="100%" border="0"></a></td>
-          <td class="colors"><a href="?page=pages/en/job"><img src="../../slike/frontpg/fabjob.jpg" alt="" width="100%" border="0"></a>
+          <td class="colors"><a href="?page=pages/en/job"><img src="../../slike/frontpg/Job.jpg" alt="" width="100%" border="0"></a>   
           </td>
+          <td class="colors"><a href="?page=pages/en/donate"><img src="../../slike/frontpg/donate.jpg" width="100%" border="0"
+                alt=""></a></td>
         </tr>
       </table>
     </div>

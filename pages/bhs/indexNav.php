@@ -7,6 +7,7 @@
     <meta name="robots" content="noindex,nofollow">
     <link rel="icon" type="image/png" href="../../slike/fav.png">
 
+
   <script src="../../js/icons.js"></script>
   <script src="../../js/script.js"></script>
 
@@ -64,10 +65,41 @@ src="https://www.facebook.com/tr?id=1158314620935416&ev=PageView&noscript=1"
 
 <!-- navigation --> 
 <body style="padding:0px; margin:0px;   background:  rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,67,164,1) 54%, rgba(0,212,255,1) 100%);">
+background: linear-gradient(90deg, rgba(67, 67, 164, 1) 0%, rgba(0, 212, 255, 1) 100%)">
 <div class="navbar navbarIndex navPosition">
   <div class="nav-head" style="z-index: 10 !important;">
     <img src="../../slike/logo.png" class="navLogo">
+    <div class="lanFlagsDesk">
+    <a href="changelang.php?lang=bhs" class="noHover">
+        <span id="bhsOption">BHS</span>
+    </a>
+    <span class="separator">|</span>
+    <a href="changelang.php?lang=en" class="noHover">
+        <span id="enOption">EN</span>
+    </a>
+</div>
+
+<script>
+    // Ovdje pretpostavljamo da imate varijablu "language" koja sadrži trenutno odabrani jezik
+
+    const bhsOption = document.getElementById('bhsOption');
+    const enOption = document.getElementById('enOption');
+
+    const aktivanStil = 'color: wheat;';
+    const neaktivanStil = 'color: wheat; opacity: 0.5;';
+
+    if (language !== 'bhs') {
+        bhsOption.setAttribute('style', aktivanStil);
+    } else {
+        bhsOption.setAttribute('style', neaktivanStil);
+    }
+
+    if (language === 'en') {
+        enOption.setAttribute('style', aktivanStil);
+    } else {
+        enOption.setAttribute('style', neaktivanStil);
+    }
+</script>
     <div id="hamburger" onclick="toggleNav()">
       <div></div>
       <div></div>
@@ -122,16 +154,4 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,67,164,1) 54%, rgb
 
 </div>
 <!-- end of nav -->
-    <span class="lanFlagsDesk">
-        <a href="changelang.php?lang=bhs" class="noHover">
-            <span <?php if ($language==='bhs' ){?>style="color:wheat;"
-                <?php } ?>>BHS
-            </span>
-        </a>
-        <span style="color:wheat;">|</span>
-        <a href="changelang.php?lang=en" class="noHover">
-            <span <?php if ($language!=='en' ){?>style="color:wheat;opacity:0.5;"
-                <?php } ?>>EN
-            </span>
-	   </a>
-    </span>
+   

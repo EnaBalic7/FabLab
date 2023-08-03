@@ -9,29 +9,29 @@
 
   <div class="memTab">
     <div style="overflow-x:auto;">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <table border="0" cellpadding="10px" cellspacing="0" width="100%">
         <!-- tabela galerija vidljiva samo za desktop racunare, za mobile ce pozvat ispod galeriju efect milo css-->
 
 
         <tr>
-          <td class="colors"><a href="?page=pages/bhs/ekspert"><img src="../../slike/frontpg/pridruzi.jpg" width="100%" border="0"
+            <td class="colors"><a href="?page=pages/bhs/onama"><img src="../../slike/frontpg/ONama.jpg" width="100%" border="0"
                 alt=""></a></td>
-          <td class="colors" rowspan="2"><a href="?page=pages/bhs/onama"><img src="../../slike/frontpg/onama.jpg" width="100%" border="0"
+            <td class="colors"><a href="?page=pages/bhs/tim"><img src="../../slike/frontpg/NasTim.jpg" width="100%" border="0"
+                alt=""></a></td>     
+            <td class="colors"><a href="?page=pages/bhs/ekspert"><img src="../../slike/frontpg/PridruziSe.jpg" width="100%" border="0"
                 alt=""></a></td>
-          <td class="colors"><a href="?page=pages/bhs/donirajte"><img src="../../slike/frontpg/doniraj.jpg" width="100%" border="0"
-                alt=""></a></td>
-          <td class="colors"><a href="https://fablab.ba/htmly/" target="_blank"><img src="../../slike/frontpg/newsletter.jpg" width="100%" border="0"
-                alt=""></a></td>
-          <td class="colors"><a href="?page=pages/bhs/tim"><img src="../../slike/frontpg/nastim.jpg" width="100%" border="0"
+            <td class="colors"><a href="https://fablab.ba/htmly/" target="_blank"><img src="../../slike/frontpg/News.jpg" width="100%" border="0"
                 alt=""></a></td>
 
         </tr>
         <tr>
-          <td class="colors"><a href="?page=pages/bhs/obrazovanje"><img src="../../slike/frontpg/edukacije.jpg" width="100%" border="0"
+          <td class="colors"><a href="?page=pages/bhs/obrazovanje"><img src="../../slike/frontpg/Edukacije.jpg" width="100%" border="0"
                 alt=""></a></td>
-          <td class="colors" colspan="2"><a href="?page=pages/bhs/naseLabaratorije"><img src="../../slike/frontpg/labaratorije.jpg" alt=""
+          <td class="colors"><a href="?page=pages/bhs/naseLabaratorije"><img src="../../slike/frontpg/Laboratorije.jpg" alt=""
                 width="100%" border="0"></a></td>
-          <td class="colors"><a href="?page=pages/bhs/fabjob"><img src="../../slike/frontpg/fabjob.jpg" alt="" width="100%" border="0"></a>
+          <td class="colors"><a href="?page=pages/bhs/fabjob"><img src="../../slike/frontpg/Job.jpg" alt="" width="100%" border="0"></a>
+          <td class="colors"><a href="?page=pages/bhs/donirajte"><img src="../../slike/frontpg/Doniraj.jpg" width="100%" border="0"
+                alt=""></a></td>
           </td>
         </tr>
       </table>

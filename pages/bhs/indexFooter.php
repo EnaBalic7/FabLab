@@ -10,7 +10,7 @@
  <link rel="stylesheet" href="../../styles/poppins.css">
 
   
-  <h4 class="w3-text-white txtCenter">Powered by</h4>
+  <h4 class="w3-text-white txtCenter" style="margin-left: 15%"; >Powered by</h4>
   <div style="text-align:center;background-color: #F1F1F1">
 
     <div style="background-color: #F1F1F1;">
