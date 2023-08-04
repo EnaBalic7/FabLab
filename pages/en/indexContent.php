@@ -1,12 +1,12 @@
 
 <!-- Header BEGINING OF THE SITE -->
   <!--Logo slider slika-->
+  
   <div class="pngg">
      <img src="../../slike/newAnimatedLogo.png" alt="">
   </div>
 
   <h1 class="makers">HOME OF THE MAKERS </h1>
-
   <div class="memTab">
     <div style="overflow-x:auto;" class="indexContent">
       
@@ -58,7 +58,7 @@
   <!--BoxesGaleryEndDesktop -->
 
 
-  
+
 <div class="grid"> <figure class=" effect-milo"> <img src="../../slike/frontpg/6.png" alt=""> 
   <figcaption> 
   <h2>Our labs</h2>
@@ -94,3 +94,5 @@
   <a href="?page=pages/en/team">Click >></a> </figcaption> </figure> </div>
 
   <br>
+
+ 
