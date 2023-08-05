@@ -5,7 +5,7 @@
     background-color: #d0c6c6c6;
     width: 450px;
     padding: 30px 40px;
-    position: sticky;
+    position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
