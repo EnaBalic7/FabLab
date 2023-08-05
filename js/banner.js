@@ -19,7 +19,7 @@ window.addEventListener("load",function(){
     )
  });
  
-
+ 
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     const popup = document.getElementById("popup");
@@ -70,7 +70,4 @@ window.addEventListener("load",function(){
 //     showPopup();
 // });
 
-// // Dodajte dodatni event listener za prikazivanje popup-a na timer
-// document.addEventListener("DOMContentLoaded", function() {
-//     setTimeout(showPopup, 5000); // Prikazi popup nakon 5 sekundi (5000 ms)
-// });
+

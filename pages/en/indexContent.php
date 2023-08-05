@@ -10,7 +10,6 @@
   <div class="memTab">
     <div style="overflow-x:auto;" class="indexContent">
       
-
       <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 1.png" class="contentImg"> </a> </div>
       <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 2.png" class="contentImg"> </a> </div>
       <div class="colors"> <a href="?page=pages/en/about"> <img src="../../slike/frontpg/Group 3.png" class="contentImg"> </a> </div>
@@ -56,8 +55,6 @@
     </div>
   </div>
   <!--BoxesGaleryEndDesktop -->
-
-
 
 <div class="grid"> <figure class=" effect-milo"> <img src="../../slike/frontpg/6.png" alt=""> 
   <figcaption> 

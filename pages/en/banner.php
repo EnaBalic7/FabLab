@@ -13,9 +13,9 @@
         <a href="https://www.samsung.com/us/about-us/brand-identity/logo/" class="popup-link" id="popupLink" target="_blank"> 
             <img src="slike/samsungLogo.avif" alt="Reklamni banner" class="popup-img">
         </a>
-</div>
+        </div>
     </div>
-    </div>    
+ </div>    
     <script src="js/banner.js"></script>
 </body>
 </html> 
