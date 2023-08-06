@@ -123,7 +123,7 @@ background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(67,67,164,1) 54%, rgb
 
 </div>
 <!-- end of nav -->
- <span class="lanFlagsDesk">
+ <!-- <span class="lanFlagsDesk">
         <a href="changelang.php?lang=bhs" class="noHover">
             <span <?php if ($language!=='bhs' ){?>style="color:wheat;opacity:0.5;"
                 <?php } ?>>BHS
@@ -135,6 +135,37 @@ background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(67,67,164,1) 54%, rgb
                 <?php } ?>>EN
             </span>
         </a>
-    </span>
+    </span> -->
 
     
+    <div class="lanFlagsDesk">
+    <a href="changelang.php?lang=bhs" class="noHover">
+        <span id="bhsOption">BHS</span>
+    </a>
+    <span class="separator">|</span>
+    <a href="changelang.php?lang=en" class="noHover">
+        <span id="enOption">EN</span>
+    </a>
+</div>
+
+<script>
+    // Ovdje pretpostavljamo da imate varijablu "language" koja sadrži trenutno odabrani jezik
+
+    const bhsOption = document.getElementById('bhsOption');
+    const enOption = document.getElementById('enOption');
+
+    const aktivanStil = 'color: wheat;';
+    const neaktivanStil = 'color: wheat; opacity: 0.5;';
+
+    if (language !== 'bhs') {
+        bhsOption.setAttribute('style', aktivanStil);
+    } else {
+        bhsOption.setAttribute('style', neaktivanStil);
+    }
+
+    if (language === 'en') {
+        enOption.setAttribute('style', aktivanStil);
+    } else {
+        enOption.setAttribute('style', neaktivanStil);
+    }
+</script>
