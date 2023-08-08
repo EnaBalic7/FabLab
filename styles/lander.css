@@ -307,17 +307,17 @@ transition: 1s ease;
 -webkit-filter: grayscale(100%);
 -webkit-transition: all 1s ease; */
 
- /* opacity:0.6;  */
+ opacity:0.6; 
 }
 
 .colors:hover{
-  opacity:1; 
+ /* opacity:1;*/ 
 /* filter: grayscale(0%);
 filter: gray;
 -webkit-filter: grayscale(0%);
 filter: none; 
  */
- transition: 1s ease; 
+ /*transition: 1s ease;*/ 
 }
 
 .indexContent{
@@ -329,5 +329,4 @@ filter: none;
 .contentImg{
 	margin:23px;
 	flex-wrap: wrap;
-
 }

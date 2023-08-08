@@ -2,7 +2,8 @@
 .popup-container {
   
     display:none;
-    background-color: #f0e5e5c6;
+    /* background-color: #f0e5e5c6; */
+    background-color: red;
     width: 450px;
     padding: 30px 40px;
     position: absolute;
