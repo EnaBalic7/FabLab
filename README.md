@@ -1,6 +1,7 @@
 # FabLab - urađene izmjene u kodu
 
 **ENA: Branch Home-redesign**
+
 **htmly\.htaccess** - Ispravljen problem neučitavanja resursa pri lokalnom pokretanju web stranice. Zahtjevi za resursima su se slali na lokaciju www/slike/..., zaobilazeći /fablab unutar /www. Ovim kodom je omogućeno da se zahtjevi šalju na pravu lokaciju, www/fablab/slike/...
 
 **pages\en\indexContent.php** - zamijenjen logo
