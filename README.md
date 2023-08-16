@@ -43,3 +43,19 @@ HANA: Branch task-5-novi
 **styles\banner.css** – određena pozicija pop up-a na sredini stranice i izgled pop up-a, te dugmeta za zatvaranje i slike
 
 **pages\en\index.php** – pozvan banner.php file 
+
+
+
+**Ajla**: Branch **task-5**
+
+**htmly.htaccess** - napravljena ispravka vezana za neučitavanje resursa. 
+
+**pages\en\banner.php** - U ovom file-u je napisan html kod u kojem je definisano od čega se sastoji banner (slika, link i dugme za zatvaranje).
+
+**banner.css** - Nakon što je kreiran html kod za banner kroz css file je dorađen izgled. Također je prilagođena veličina banner-a i za mobilne uređaje.  
+
+**banner.js** - u ovom dijelu koda su napisane dvije java script funkcije. Prva omogućava korisniku da zatvori banner, dok druga realizira pojavu banner-a nakon pet sekundi. Pored navedenih funkcija banner ostaje vidljiv i tokom pomicanja ka dnu stranice, sve dok korisnik ne odluči da ga zatvori.
+
+**pages\en\index.php** - Poziv fajla pages\en\banner.php
+
+**\slike** - Dodana slika za pop up banner (newImage.jpg)
