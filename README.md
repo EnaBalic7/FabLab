@@ -59,3 +59,22 @@ HANA: Branch task-5-novi
 **pages\en\index.php** - Poziv fajla pages\en\banner.php
 
 **\slike** - Dodana slika za pop up banner (newImage.jpg)
+
+
+
+**ALMER: Branch home-page-example2**
+
+**slike\frontpg** - dodane editovane slike
+
+**pages/bhs/indexContent.php** – dodane editovane slike i promjenjen raspored, padding i još neki detalji oko slika
+
+**pages/bhs/indexFooter.php** – dodana margina za powered by
+
+**pages/bhs/indexNav.php** – promjenjen gradiant pozadine
+
+**pages/bhs/indexNav.php** – promjenjen dio koda vezano za BHS | EN, dodan script dio koda kako bi nestao warning koji se prikazivao
+
+**pages/en** – iste kao za pages/bhs sa prilagođenim jezikom
+
+**styles/drugi.css** – promjene koje prebacuju navigacijski bar na stranu, rasporeda sadržaja nav bara i promjene oko dimenzija logo animacije
+
