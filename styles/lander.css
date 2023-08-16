@@ -317,6 +317,7 @@ filter: gray;
 -webkit-filter: grayscale(0%);
 filter: none; 
  */
+ 
  transition: 1s ease; 
 }
 
@@ -329,4 +330,10 @@ filter: none;
 .contentImg{
 	margin:23px;
 	flex-wrap: wrap;
+}
+
+
+.contentImg:hover{
+	box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(214, 226, 231, 0.32) 0px 2px 16px 0px;
+
 }
