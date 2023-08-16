@@ -5,15 +5,15 @@
 
 **pages\en\indexContent.php** - zamijenjen logo
 
-***slike\*** - dodan novi logo u folder (nekoliko različitih slika)
+**slike\*** - dodan novi logo u folder (nekoliko različitih slika)
 
-***slike\frontpg\*** - dodane editovane slike
+**slike\frontpg\*** - dodane editovane slike
 
 **pages\en\indexNav.php** - zamijenjen logo, promijenjen gradient pozadine
 
 **pages\en\indexFooter.php** - promijenjan boja pozadine, postavljene editovane slike loga firmi
 
-***slike\sponzori\*** - dodane editovane slike 
+**slike\sponzori\*** - dodane editovane slike 
 
 **styles\drugi.css** - promijenjen scroll behavior, boja GitHub ikonice pri hover, background nava i boja i border radius prilikom hover na stavke nava
 
