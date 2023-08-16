@@ -307,7 +307,7 @@ transition: 1s ease;
 -webkit-filter: grayscale(100%);
 -webkit-transition: all 1s ease; */
 
- /* opacity:0.6;  */
+ opacity:1; 
 }
 
 .colors:hover{

@@ -7,8 +7,8 @@
 
 </head>
 <body>
-    <div class='background'>
-    <div class="popup-container" id="popup">
+    <div class='background' id="popup">
+    <div class="popup-container">
         <div class="container">
         <button id="close">&times;</button>
         <a href="https://www.samsung.com/us/about-us/brand-identity/logo/" class="popup-link" id="popupLink" target="_blank"> 
